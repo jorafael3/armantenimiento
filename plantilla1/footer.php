@@ -72,11 +72,14 @@
                             </div>
                             <div class="footer__link">
                                 <ul class="ft__menu">
-                                    <li><a href="index.php">INICIO</a></li>
-                                    <li><a href="service.html">SERVICIOS</a></li>
-                                    <li><a href="#">PROJECTOS</a></li>
-                                    <li><a href="contact.html">CONTACTOS</a></li>
-                                    <li><a href="about.html">QUIENES SOMOS</a></li>
+                                <?php
+                                    foreach ($ARRAY_RUTAS as $row) {
+                                    ?>
+                                        <li><a href="<?php echo $row["LINK"]  ?>"><?php echo $row["NOMBRE"]  ?></a></li>
+
+                                    <?php
+                                    }
+                                    ?>
                                 </ul>
                                 <!-- <ul class="ft__menu">
                                     <li><a href="#">Quote</a></li>

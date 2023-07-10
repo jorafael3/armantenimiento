@@ -206,7 +206,7 @@
 }
 
 .about__inner.about__hober__info {
-    background: #fcc236 none repeat scroll 0 0;
+    background: #2980B9 none repeat scroll 0 0;
     height: 100%;
     left: 0;
     position: absolute;
@@ -261,7 +261,7 @@ About 2
 }
 
 .about--2 .about__inner.about__hober__info {
-    background: #fcc236 none repeat scroll 0 0;
+    background: #2980B9 none repeat scroll 0 0;
 }
 
 .about--2 .about__inner.about__hober__info h2 {
@@ -2095,8 +2095,9 @@ blockquote {
     margin-right: 18px;
 }
 
+/* PERSONALIZADO */
 .ct__details p a:hover {
-    color: #fcc236;
+    color: #2980B9;
 }
 
 #googleMap {

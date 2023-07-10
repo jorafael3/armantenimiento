@@ -35,7 +35,12 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/player.css">
 
-    <?php include("datos.php") ?>
+    <?php include("datos.php");
+
+    $ARRAY_RUTAS = RUTAS();
+
+
+    ?>
 
     <!-- Modernizr JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -93,22 +98,28 @@
                         <div class="col-md-8 col-sm-6 col-xs-5">
                             <nav class="main__menu__nav  hidden-xs hidden-sm">
                                 <ul class="main__menu">
-                                    <li><a href="index.php">INICIO</a></li>
-                                    <li><a href="servicios.php">SERVICIOS</a></li>
-                                    <li><a href="proyectos.php">PROJECTOS</a></li>
-                                    <li><a href="contact.html">CONTACTOS</a></li>
-                                    <li><a href="about.html">QUIENES SOMOS</a></li>
+                                    <?php
+                                    foreach ($ARRAY_RUTAS as $row) {
+                                    ?>
+                                        <li><a href="<?php echo $row["LINK"]  ?>"><?php echo $row["NOMBRE"]  ?></a></li>
+
+                                    <?php
+                                    }
+                                    ?>
                                 </ul>
                             </nav>
 
                             <div class="mobile-menu clearfix visible-xs visible-sm">
                                 <nav id="mobile_dropdown">
                                     <ul>
-                                        <li class="drop"><a href="index.php">INICIO</a></li>
-                                        <li><a href="service.html">SERVICIOS</a></li>
-                                        <li class="drop"><a href="#">PROJECTOS</a></li>
-                                        <li><a href="contact.html">CONTACTOS</a></li>
-                                        <li><a href="about.html">QUIENES SOMOS</a></li>
+                                        <?php
+                                        foreach ($ARRAY_RUTAS as $row) {
+                                        ?>
+                                            <li><a href="<?php echo $row["LINK"]  ?>"><?php echo $row["NOMBRE"]  ?></a></li>
+
+                                        <?php
+                                        }
+                                        ?>
                                     </ul>
                                 </nav>
                             </div>

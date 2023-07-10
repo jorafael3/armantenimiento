@@ -108,7 +108,6 @@ function proyectos()
     return $PROYECTOS_ARRAY;
 }
 
-
 function Servicios()
 {
     $pagina_detalle = "servicios_detalles.php";
@@ -382,4 +381,54 @@ function Servicios()
 
 
     return $SERVICIOS_ARRAY;
+}
+
+function RUTAS()
+{
+
+    $ARRAY_RUTAS = [
+        array(
+            "LINK" => "index.php",
+            "NOMBRE" => "INICIO"
+        ),
+        array(
+            "LINK" => "servicios.php",
+            "NOMBRE" => "SERVICIOS"
+        ),
+        array(
+            "LINK" => "proyectos.php",
+            "NOMBRE" => "PROYECTOS"
+        ),
+        array(
+            "LINK" => "contactos.php",
+            "NOMBRE" => "CONTACTOS"
+        ),
+        array(
+            "LINK" => "acerca.php",
+            "NOMBRE" => "QUIENES SOMOS"
+        ),
+    ];
+
+    return $ARRAY_RUTAS;
+}
+
+function ACERCA()
+{
+
+    $ARRAY_ACERCA = [
+        array(
+            "VALOR1" => "TRABAJO EN EQUIPO",
+            "VALOR2" => "ÉTICA",
+            "VALOR3" => "INNOVACIÓN",
+            "DES1" => "Fomentamos la participación de todos para lograr un objetivo
+            común, compartiendo información y conocimientos.",
+            "DES2" => "Actuamos con profesionalidad, respetando procedimientos , con
+            actitud integra, respetando la confidencialidad de nuestros
+            clientes.",
+            "DES3" => "Promovemos mejoras continuas e innovamos para alcanzar la
+            máxima calidad desde criterios de rentabilidad.",
+        )
+    ];
+
+    return $ARRAY_ACERCA;
 }
