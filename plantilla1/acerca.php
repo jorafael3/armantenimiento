@@ -102,13 +102,12 @@ $EQUIPO = $ARRAY_ACERCA[1];
                                     </div>
                                     <div class="team__hover__info">
                                         <ul class="team__social__link">
-                                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
 
                                             <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
 
                                             <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
 
-                                            <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
