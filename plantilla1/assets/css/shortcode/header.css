@@ -65,7 +65,7 @@
 /* PERSONALIZADO */
 .heaher__top__btn a {
   align-items: center;
-  background: #2980B9 none repeat scroll 0 0;
+  background: #0C6E95 none repeat scroll 0 0;
   color: #fff;
   display: flex;
   font-weight: 700;
@@ -115,7 +115,7 @@
 
 /* PERSONALIZADO */
 .main__menu>li:hover>a {
-  color: #2980B9;
+  color: #0C6E95;
 }
 
 .logo a {
@@ -167,7 +167,7 @@
 
 /* PERSONALIZADO */
 .htc__header__search a i:hover {
-  color: #2980B9;
+  color: #0C6E95;
 }
 
 .htc__header__search i {
@@ -290,5 +290,5 @@
 
 .main__menu li.drop ul.dropdown li:hover>a {
   background: #fafafa none repeat scroll 0 0;
-  color: #2980B9;
+  color: #0C6E95;
 }

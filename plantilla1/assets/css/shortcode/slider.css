@@ -78,7 +78,7 @@
 
 /* PERSONALIZADO */
 .htc__btn {
-  background: #2980B9 none repeat scroll 0 0;
+  background: #0C6E95 none repeat scroll 0 0;
   color: #fff;
   display: inline-block;
   font-family: Raleway;
@@ -88,13 +88,13 @@
   line-height: 45px;
   padding: 0 25px;
   transition: 0.5s;
-  border: 1px solid #2980B9;
+  border: 1px solid #0C6E95;
 }
 
 .htc__btn:hover {
-  border: 1px solid #2980B9;
+  border: 1px solid #0C6E95;
   background: transparent;
-  color: #2980B9;
+  color: #0C6E95;
 }
 
 

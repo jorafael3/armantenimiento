@@ -427,6 +427,32 @@ function ACERCA()
             clientes.",
             "DES3" => "Promovemos mejoras continuas e innovamos para alcanzar la
             máxima calidad desde criterios de rentabilidad.",
+        ),
+        array(
+            array(
+                "EMP1" => "NOMBRE 1",
+                "EMP1_CARGO" => "CARGO 1",
+                "EMP1_IMG" => "assets/images/team/2.jpg",
+            ),
+            array(
+                "EMP1" => "NOMBRE 2",
+                "EMP1_CARGO" => "CARGO 1",
+                "EMP1_IMG" => "assets/images/team/3.jpg",
+
+
+            ), array(
+                "EMP1" => "NOMBRE 3",
+                "EMP1_CARGO" => "CARGO 3",
+                "EMP1_IMG" => "assets/images/team/1.jpg",
+
+
+            ), array(
+                "EMP1" => "NOMBRE 4",
+                "EMP1_CARGO" => "CARGO 4",
+                "EMP1_IMG" => "assets/images/team/4.jpg",
+
+
+            ),
         )
     ];
 

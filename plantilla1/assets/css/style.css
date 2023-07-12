@@ -142,7 +142,7 @@
 
 /* PERSONALIZADO */
 #scrollUp {
-    background: #2980B9 none repeat scroll 0 0;
+    background: #0C6E95 none repeat scroll 0 0;
 }
 
 
@@ -206,7 +206,7 @@
 }
 
 .about__inner.about__hober__info {
-    background: #2980B9 none repeat scroll 0 0;
+    background: #0C6E95 none repeat scroll 0 0;
     height: 100%;
     left: 0;
     position: absolute;
@@ -261,7 +261,7 @@ About 2
 }
 
 .about--2 .about__inner.about__hober__info {
-    background: #2980B9 none repeat scroll 0 0;
+    background: #0C6E95 none repeat scroll 0 0;
 }
 
 .about--2 .about__inner.about__hober__info h2 {
@@ -338,7 +338,7 @@ About 2
 
 /* PERZONALIZADO */
 .service__hover::before {
-    background: #2980B9 none repeat scroll 0 0;
+    background: #0C6E95 none repeat scroll 0 0;
     content: "";
     height: 100%;
     opacity: 0.85;
@@ -502,7 +502,7 @@ About 2
 
 /* PERSONALIZADO */
 .project__hover__info {
-    background: rgba(41, 128, 185, 0.9) none repeat scroll 0 0;
+    background: rgba(12, 110, 149, 0.9) none repeat scroll 0 0;
     height: 100%;
     left: 0;
     opacity: 0;
@@ -605,8 +605,8 @@ About 2
 }
 
 .htc__btn--transparent:hover {
-    background: #2980B9 none repeat scroll 0 0;
-    border: 1px solid #2980B9;
+    background: #0C6E95 none repeat scroll 0 0;
+    border: 1px solid #0C6E95;
     color: #fff;
 }
 
@@ -625,7 +625,7 @@ About 2
 }
 
 .team__hover__info {
-    background: rgba(252, 194, 54, 0.85) none repeat scroll 0 0;
+    background: rgba(12, 110, 149, 0.85) none repeat scroll 0 0;
     bottom: 0;
     left: 0;
     padding: 25px 0;
@@ -652,7 +652,7 @@ About 2
 .team__social__link li a i {
     background: #fff none repeat scroll 0 0;
     border-radius: 100%;
-    color: #fcc236;
+    color: #0C6E95;
     font-size: 12px;
     height: 30px;
     line-height: 30px;
@@ -699,7 +699,7 @@ About 2
 }
 
 .team:hover .team__details {
-    background: #fcc236 none repeat scroll 0 0;
+    background: #0C6E95 none repeat scroll 0 0;
 }
 
 .team:hover .team__hover__info {
@@ -862,7 +862,7 @@ About 2
 
 .htc__testimonial__wrap .slick-dots li.slick-active button::before,
 .htc__testimonial__wrap .slick-dots li button:hover::before {
-    background: #fcc236 none repeat scroll 0 0;
+    background: #0C6E95 none repeat scroll 0 0;
     opacity: 1;
 }
 
@@ -968,7 +968,7 @@ About 2
 }
 
 .blog:hover .blog__meta {
-    background: #fcc236;
+    background: #0C6E95;
 }
 
 .blog:hover .blog__meta li a,
@@ -984,7 +984,7 @@ About 2
 }
 
 .blog__meta li a:hover {
-    color: #fcc236;
+    color: #0C6E95;
 }
 
 .blog__meta li {
@@ -1020,7 +1020,7 @@ About 2
 }
 
 .blog__btn a:hover {
-    color: #fcc236;
+    color: #0C6E95;
 }
 
 .blog__btn {
@@ -1186,8 +1186,8 @@ About 2
 }
 
 .subscribe__btn input {
-    background: #fcc236 none repeat scroll 0 0;
-    border: 1px solid #fcc236;
+    background: #0C6E95 none repeat scroll 0 0;
+    border: 1px solid #0C6E95;
     color: #fff;
     font-family: Raleway;
     font-size: 12px;
@@ -1437,7 +1437,7 @@ About 2
 
 /* PERSONALIZADO */
 .cat__list li:hover a {
-    color: #2980B9;
+    color: #0C6E95;
 }
 
 .sidebar__title {
@@ -1483,7 +1483,7 @@ About 2
 }
 
 .pro__input__box i:hover {
-    background: #fcc236 none repeat scroll 0 0;
+    background: #0C6E95 none repeat scroll 0 0;
 }
 
 .htc__category {
@@ -1509,7 +1509,7 @@ About 2
 
 /* PERSONALIZADO */
 .cat__list li:hover a {
-    color: #2980B9;
+    color: #0C6E95;
 }
 
 .htc__broc {
@@ -1536,7 +1536,7 @@ About 2
 }
 
 .brocure__list li a:hover {
-    color: #fcc236;
+    color: #0C6E95;
 }
 
 .htc__recent__post {
@@ -1629,8 +1629,8 @@ About 2
 }
 
 .tag__list li a:hover {
-    background: #fcc236 none repeat scroll 0 0;
-    border: 1px solid #fcc236;
+    background: #0C6E95 none repeat scroll 0 0;
+    border: 1px solid #0C6E95;
     color: #fff;
 }
 
@@ -1767,7 +1767,7 @@ blockquote {
 }
 
 .bl__remply li a:hover {
-    color: #fcc236;
+    color: #0C6E95;
 }
 
 .bl__remply li+li {
@@ -1975,7 +1975,7 @@ blockquote {
 }
 
 .download__project h2 {
-    color: #fcc236;
+    color: #0C6E95;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -2025,7 +2025,7 @@ blockquote {
 }
 
 .facts__list li a:hover {
-    color: #fcc236;
+    color: #0C6E95;
 }
 
 /*---------------------------------------
@@ -2097,7 +2097,7 @@ blockquote {
 
 /* PERSONALIZADO */
 .ct__details p a:hover {
-    color: #2980B9;
+    color: #0C6E95;
 }
 
 #googleMap {
@@ -2190,11 +2190,11 @@ blockquote {
 }
 
 .login__register__menu li.active a {
-    color: #fcc236;
+    color: #0C6E95;
 }
 
 .login__register__menu li a:hover {
-    color: #fcc236;
+    color: #0C6E95;
 }
 
 .htc__login__register__wrap {
@@ -2227,7 +2227,7 @@ blockquote {
 
 .tabs__checkbox span.forget a {
     float: right;
-    color: #fcc236;
+    color: #0C6E95;
     font-size: 12px;
 }
 
@@ -2320,9 +2320,9 @@ blockquote {
 }
 
 .htc__login__btn a:hover {
-    background: #fcc236;
+    background: #0C6E95;
     color: #fff;
-    border: 1px solid #fcc236;
+    border: 1px solid #0C6E95;
 }
 
 /*-------------------------------

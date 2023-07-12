@@ -90,8 +90,8 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-6 col-xs-7">
                             <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo/sinply-construction.png" alt="logo image">
+                                <a href="index.php">
+                                    <img style="width: 120px; height: 80px;" src="assets/img/logo/logoarmantenimientosa.png" alt="logo image">
                                 </a>
                             </div>
                         </div>
