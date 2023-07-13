@@ -10,7 +10,8 @@ function proyectos()
             "ID" => "0",
             "NOMBRE" => "PROYECTO 1",
             "DURACION" => "6 MESES",
-            "IMG_BACKGROUND" => "assets/images/service/1.jpg",
+            "CATEGORIA" => "commercial",
+            "IMG_BACKGROUND" => "assets/images/projects/project1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=1",
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
@@ -42,7 +43,8 @@ function proyectos()
             "ID" => "1",
             "NOMBRE" => "PROYECTO 2",
             "DURACION" => "6 MESES",
-            "IMG_BACKGROUND" => "assets/images/service/2.jpg",
+            "CATEGORIA" => "commercial",
+            "IMG_BACKGROUND" => "assets/images/projects/project2.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=2",
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
@@ -73,7 +75,40 @@ function proyectos()
             "ID" => "2",
             "NOMBRE" => "PROYECTO 3",
             "DURACION" => "6 MESES",
-            "IMG_BACKGROUND" => "assets/images/service/3.jpg",
+            "CATEGORIA" => "education",
+            "IMG_BACKGROUND" => "assets/images/projects/project3.jpg",
+            "LINK_DETALLE" => $pagina_detalle . "?ID=2",
+            "DETALLES_PR" => array(
+                "CLIENTE" => "cliente 1",
+                "LOCALIZACION" => "sector 1",
+                "SECTOR" => "sector 1",
+                "DURACION" => "6 MESES",
+                "DESCRIPCION" => "Aqui va la descripcion del proyecto",
+                "IMAGENES_PRINCIPALES" => [
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+                ],
+                "GALERIA" => [
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+
+                ]
+            ),
+        ),
+        array(
+            "ID" => "2",
+            "NOMBRE" => "PROYECTO 3",
+            "DURACION" => "6 MESES",
+            "CATEGORIA" => "government",
+            "IMG_BACKGROUND" => "assets/images/projects/project4.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=2",
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
@@ -378,9 +413,47 @@ function Servicios()
         ),
     ];
 
+    $SERVICIOS_ADICIONALES = [
+        array(
+            "NOMBRE" => "TRABAJOS EN RH",
+            "DESCRIPCION" => "Muebles de oficina, anaqueles de cocina,
+            armarios, paredes, etc. ",
+            "ICONO" => "assets/images/icon-image/service-icon1.png",
+        ),  array(
+            "NOMBRE" => "CCTV",
+            "DESCRIPCION" => "Mantenimiento, instalaciones (Domo, 360, IP),
+            circuito cerrado, sensores, alarmas.",
+            "ICONO" => "assets/images/icon-image/service-icon1.png",
+        ),  array(
+            "NOMBRE" => "ESTIBAS Y LOGISTICA",
+            "DESCRIPCION" => " Carga y descarga de cualquier tipo de material",
+            "ICONO" => "assets/images/icon-image/service-icon1.png",
+        ),  array(
+            "NOMBRE" => "GASFITERIA",
+            "DESCRIPCION" => " Reubicación, instalaciones nuevas, mantenimiento
+            preventivo y correctivo, etc…",
+            "ICONO" => "assets/images/icon-image/service-icon1.png",
+        ),
+        array(
+            "NOMBRE" => "ARQUITECTURA",
+            "DESCRIPCION" => "Diseños, maqueteria 3D (modelados, renderizado,
+            video renders), construcción, remodelación,",
+            "ICONO" => "assets/images/icon-image/service-icon1.png",
+        ),
+        array(
+            "NOMBRE" => "COTIZACION Y PRESUPUESTO",
+            "DESCRIPCION" => "El servicio que brinda AR MANTENIMIENTOS se
+            basa bajo previa fiscalización, políticas y
+            necesidades del cliente. El presupuesto será
+            enviado y canalizado al cliente para su posterior
+            aprovación.",
+            "ICONO" => "assets/images/icon-image/service-icon1.png",
+        ),
+    ];
 
 
-    return $SERVICIOS_ARRAY;
+
+    return [$SERVICIOS_ARRAY, $SERVICIOS_ADICIONALES];
 }
 
 function RUTAS()
