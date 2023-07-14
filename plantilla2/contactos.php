@@ -22,8 +22,8 @@ include("header.php");
 
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="section-title">Reaching our Office</h2>
-                <h3 class="section-sub-title">Find Our Location</h3>
+                <h2 class="section-title"></h2>
+                <h3 class="section-sub-title">Contactanos</h3>
             </div>
         </div>
         <!--/ Title row end -->

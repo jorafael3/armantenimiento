@@ -148,7 +148,7 @@
                     <?php
                     $con = 0;
                     foreach ($ARRAY_RUTAS as $row) {
-                      $active = "active";
+                      $active = "";
                       if ($con != 0) {
                         $active = "";
                       }

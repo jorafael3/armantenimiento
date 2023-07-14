@@ -35,14 +35,14 @@ $ARRAY_SERVICIO = Servicios()[0];
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="ts-service-box">
                         <div class="ts-service-image-wrapper">
-                            <img loading="lazy" class="w-100" src="assets/images/services/service1.jpg" alt="service-image">
+                            <img style="width: 300px; height: 300px;" loading="lazy" class="w-100" src="<?php echo $row["IMG_BACKGROUND"]  ?>" alt="service-image">
                         </div>
                         <div class="d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="assets/images/icon-image/service-icon1.png" alt="service-icon" />
+                                <img style="width: 64px;height: 64px;" loading="lazy" src="<?php echo $row["ICONO"]  ?>" alt="service-icon" />
                             </div>
                             <div class="ts-service-info">
-                                <h3 class="service-box-title"><a href=<?php echo $row["LINK_DETALLE"]  ?>><?php echo $row["NOMBRE"]  ?></a></h3>
+                                <h3 class="service-box-title"><a href='<?php echo $row["LINK_DETALLE"]  ?>' ><?php echo $row["NOMBRE"]  ?></a></h3>
                                 <p><?php echo $row["DESCRIPCION"]  ?>.</p>
                                 <a class="learn-more d-inline-block" href="<?php echo $row["LINK_DETALLE"]  ?>" aria-label="service-details"><i class="fa fa-caret-right"></i>Mas detalles</a>
                             </div>

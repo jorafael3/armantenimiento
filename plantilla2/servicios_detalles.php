@@ -66,7 +66,7 @@ if (isset($_GET["ID"])) {
                             // echo $FILTRADO["IMAGENES_PRINCIPALES"][$i];
                         ?>
                             <div class="item">
-                                <img loading="lazy" class="img-fluid" src="<?php echo $ARRAY["IMAGENES_PRINCIPALES"][$i] ?>" alt="project-slider-image" />
+                                <img style="height: 900px; width: 100%;" loading="lazy" class="img-fluid" src="<?php echo $ARRAY["IMAGENES_PRINCIPALES"][$i] ?>" alt="project-slider-image" />
                             </div>
                         <?php
                         }

@@ -13,11 +13,11 @@ $CLIENTES = INDEX()[0];
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-12 text-center">
-                        <h2 class="slide-title" data-animation-in="slideInLeft">17 Years of excellence in</h2>
-                        <h3 class="slide-sub-title" data-animation-in="slideInRight">Construction Industry</h3>
+                        <h2 class="slide-title" data-animation-in="slideInLeft">8 año de excelencia</h2>
+                        <h3 class="slide-sub-title" data-animation-in="slideInRight">industria de la construccion</h3>
                         <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                            <a href="services.html" class="slider btn btn-primary">Our Services</a>
-                            <a href="contact.html" class="slider btn btn-primary border">Contact Now</a>
+                            <a href="servicios.php" class="slider btn btn-primary">Nuestros servicios</a>
+                            <a href="contactos.php" class="slider btn btn-primary border">Contactanos</a>
                         </p>
                     </div>
                 </div>
@@ -30,11 +30,11 @@ $CLIENTES = INDEX()[0];
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-12">
-                        <h2 class="slide-title-box" data-animation-in="slideInDown">World Class Service</h2>
-                        <h3 class="slide-title" data-animation-in="fadeIn">When Service Matters</h3>
-                        <h3 class="slide-sub-title" data-animation-in="slideInLeft">Your Choice is Simple</h3>
+                        <h2 class="slide-title-box" data-animation-in="slideInDown">Servicio de clase</h2>
+                        <h3 class="slide-title" data-animation-in="fadeIn">Cuando el servicio importa</h3>
+                        <h3 class="slide-sub-title" data-animation-in="slideInLeft">tu elección es simple</h3>
                         <p data-animation-in="slideInRight">
-                            <a href="services.html" class="slider btn btn-primary border">Our Services</a>
+                            <a href="servicios.php" class="slider btn btn-primary border">Nuestros servicios</a>
                         </p>
                     </div>
                 </div>
@@ -47,14 +47,12 @@ $CLIENTES = INDEX()[0];
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-md-12">
-                        <h2 class="slide-title" data-animation-in="slideInDown">Meet Our Engineers</h2>
-                        <h3 class="slide-sub-title" data-animation-in="fadeIn">We believe sustainability</h3>
-                        <p class="slider-description lead" data-animation-in="slideInRight">We will deal with your failure that
-                            determines how you achieve success.</p>
+                        <h2 class="slide-title" data-animation-in="slideInDown">Conocenos</h2>
+                        <h3 class="slide-sub-title" data-animation-in="fadeIn">nosotros creemos en la sostenibilidad</h3>
+                        <p class="slider-description lead" data-animation-in="slideInRight">nosotros nos ocuparemos</p>
                         <div data-animation-in="slideInLeft">
-                            <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">Get Free Quote</a>
-                            <a href="about.html" class="slider btn btn-primary border" aria-label="learn-more-about-us">Learn
-                                more</a>
+                            <a href="contactos.php" class="slider btn btn-primary" aria-label="contact-with-us">contactanos</a>
+                            <a href="acerca.php" class="slider btn btn-primary border" aria-label="learn-more-about-us">acerca de nosotros</a>
                         </div>
                     </div>
                 </div>
@@ -99,14 +97,14 @@ $CLIENTES = INDEX()[0];
                     <div class="col-lg-4 col-md-6 mb-5">
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
-                                <img loading="lazy" class="w-100" src="assets/images/services/service1.jpg" alt="service-image">
+                                <img loading="lazy" style="width: 300px;height: 300px;" class="w-100" src="<?php echo $row["IMG_BACKGROUND"] ?>" alt="service-image">
                             </div>
                             <div class="d-flex">
                                 <div class="ts-service-box-img">
-                                    <img loading="lazy" src="assets/images/icon-image/service-icon1.png" alt="service-icon" />
+                                    <img style="width: 64px;height: 64px;"  loading="lazy" src="<?php echo $row["ICONO"]  ?>" alt="service-icon" />
                                 </div>
                                 <div class="ts-service-info">
-                                    <h3 class="service-box-title"><a href="service-single.html"><?php echo $row["NOMBRE"]  ?></a></h3>
+                                    <h3 class="service-box-title"><a href="<?php echo $row["LINK_DETALLE"] ?>"><?php echo $row["NOMBRE"]  ?></a></h3>
                                     <p><?php echo $row["DESCRIPCION"]  ?>.</p>
                                     <a class="learn-more d-inline-block" href="<?php echo $row["LINK_DETALLE"]  ?>" aria-label="service-details"><i class="fa fa-caret-right"></i>Mas detalles</a>
                                 </div>
@@ -148,7 +146,7 @@ $CLIENTES = INDEX()[0];
                 ?>
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="assets/images/icon-image/service-icon1.png" alt="service-icon">
+                                <img style="width: 64px; height: 64px;" loading="lazy" src="<?php echo $row["ICONO"] ?>" alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#!"><?php echo $row["NOMBRE"]  ?></a></h3>
@@ -176,7 +174,7 @@ $CLIENTES = INDEX()[0];
                 ?>
                         <div class="ts-service-box d-flex">
                             <div class="ts-service-box-img">
-                                <img loading="lazy" src="assets/images/icon-image/service-icon1.png" alt="service-icon">
+                                <img style="width: 64px; height: 64px;" loading="lazy" src="<?php echo $row["ICONO"] ?>" alt="service-icon">
                             </div>
                             <div class="ts-service-box-info">
                                 <h3 class="service-box-title"><a href="#!"><?php echo $row["NOMBRE"]  ?></a></h3>
@@ -243,7 +241,7 @@ $CLIENTES = INDEX()[0];
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.html"><?php echo $row["NOMBRE"] ?></a>
+                                            <a href="<?php echo $row["LINK_DETALLE"] ?>"><?php echo $row["NOMBRE"] ?></a>
                                         </h3>
                                         <p class="project-cat"><?php echo $row["CATEGORIA"] ?></p>
                                     </div>
