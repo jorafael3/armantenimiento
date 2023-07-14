@@ -3,6 +3,7 @@ include("header.php");
 $ARRAY_SERVICIO = Servicios()[0];
 $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
 $ARRAY_PROYECTOS = proyectos();
+$CLIENTES = INDEX()[0];
 
 ?>
 
@@ -61,6 +62,7 @@ $ARRAY_PROYECTOS = proyectos();
         </div>
     </div>
 </div>
+
 <section class="call-to-action no-padding">
     <div class="container">
         <div class="action-style-box">
@@ -267,55 +269,89 @@ $ARRAY_PROYECTOS = proyectos();
 </section><!-- Project area end -->
 
 <section id="facts" class="facts-area dark-bg">
-  <div class="container">
-    <div class="facts-wrapper">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 ts-facts">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="assets/images/icon-image/fact1.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="1789">0</span></h2>
-                <h3 class="ts-facts-title">Total Projects</h3>
-              </div>
-          </div><!-- Col end -->
+    <div class="container">
+        <div class="facts-wrapper">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 ts-facts">
+                    <div class="ts-facts-img">
+                        <img loading="lazy" src="assets/images/icon-image/fact1.png" alt="facts-img">
+                    </div>
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="100">0</span></h2>
+                        <h3 class="ts-facts-title">Proyectos realizados</h3>
+                    </div>
+                </div><!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="assets/images/icon-image/fact2.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="647">0</span></h2>
-                <h3 class="ts-facts-title">Staff Members</h3>
-              </div>
-          </div><!-- Col end -->
+                <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
+                    <div class="ts-facts-img">
+                        <img loading="lazy" src="assets/images/icon-image/fact2.png" alt="facts-img">
+                    </div>
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="10">0</span></h2>
+                        <h3 class="ts-facts-title">Clientes</h3>
+                    </div>
+                </div><!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="assets/images/icon-image/fact3.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="4000">0</span></h2>
-                <h3 class="ts-facts-title">Hours of Work</h3>
-              </div>
-          </div><!-- Col end -->
+                <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+                    <div class="ts-facts-img">
+                        <img loading="lazy" src="assets/images/icon-image/fact3.png" alt="facts-img">
+                    </div>
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="10">0</span></h2>
+                        <h3 class="ts-facts-title">servicios</h3>
+                    </div>
+                </div><!-- Col end -->
 
-          <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
-              <div class="ts-facts-img">
-                <img loading="lazy" src="assets/images/icon-image/fact4.png" alt="facts-img">
-              </div>
-              <div class="ts-facts-content">
-                <h2 class="ts-facts-num"><span class="counterUp" data-count="44">0</span></h2>
-                <h3 class="ts-facts-title">Countries Experience</h3>
-              </div>
-          </div><!-- Col end -->
+                <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
+                    <div class="ts-facts-img">
+                        <img loading="lazy" src="assets/images/icon-image/fact4.png" alt="facts-img">
+                    </div>
+                    <div class="ts-facts-content">
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="5">0</span></h2>
+                        <h3 class="ts-facts-title">Certificaciones</h3>
+                    </div>
+                </div><!-- Col end -->
 
-        </div> <!-- Facts end -->
+            </div> <!-- Facts end -->
+        </div>
+        <!--/ Content row end -->
     </div>
-    <!--/ Content row end -->
-  </div>
-  <!--/ Container end -->
+    <!--/ Container end -->
 </section><!-- Facts end -->
+
+
+
+<section class="content">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 mt-5 mt-lg-0">
+
+                <h3 class="column-title">Nuestro clientes</h3>
+
+                <div class="row all-clients">
+                    <?php
+                    foreach ($CLIENTES as $row) {
+                    ?>
+                        <div class="col-sm-4 col-6">
+                            <figure class="clients-logo">
+                                <a href="#!" style="width: 200px;height: 200px;">
+                                    <img loading="lazy" class="img-fluid" src="<?php echo $row["IMG"]  ?>" alt="clients-logo" /></a>
+                            </figure>
+                        </div><!-- Client 1 end -->
+                    <?php
+                    }
+                    ?>
+
+                </div><!-- Clients row end -->
+
+            </div><!-- Col end -->
+
+        </div>
+        <!--/ Content row end -->
+    </div>
+    <!--/ Container end -->
+</section><!-- Content end -->
 
 
 <?php

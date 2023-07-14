@@ -6,19 +6,19 @@
   <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
-  <title>Constra - Construction Html5 Template</title>
+  <title>ArMantnimientos</title>
 
   <!-- Mobile Specific Metas
 ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Construction Html5 Template">
+  <meta name="description" content="ArMantenimientos">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name=author content="Themefisher">
-  <meta name=generator content="Themefisher Constra HTML Template v1.0">
+  <meta name=author content="">
+  <meta name=generator content="">
 
   <!-- Favicon
 ================================================== -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="assets/img/logo/logoarmantenimientosa.png">
 
   <!-- CSS
 ================================================== -->
@@ -39,6 +39,8 @@
   include("datos.php");
 
   $ARRAY_RUTAS = RUTAS();
+  $SERVICIOS = Servicios()[0];
+  $INFO = INDEX()[1][0];
 
   ?>
 
@@ -53,7 +55,7 @@
           <div class="col-lg-8 col-md-8">
             <ul class="top-info text-center text-md-left">
               <li><i class="fas fa-map-marker-alt"></i>
-                <p class="info-text">AV 123, EC</p>
+                <p class="info-text"><?php echo $INFO["DIRECCION"] ?></p>
               </li>
             </ul>
           </div>
@@ -62,18 +64,16 @@
           <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
             <ul class="list-unstyled">
               <li>
-                <a title="Facebook" href="https://facebbok.com/themefisher.com">
+                <a title="Facebook" href="<?php echo $INFO["FACEB"] ?>">
                   <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
                 </a>
-                <a title="Twitter" href="https://twitter.com/themefisher.com">
-                  <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                <a title="Twitter" href="<?php echo $INFO["TIK"] ?>">
+                  <span class="social-icon"><i class="fab fa-tiktok"></i></span>
                 </a>
-                <a title="Instagram" href="https://instagram.com/themefisher.com">
+                <a title="Instagram" href="<?php echo $INFO["INSTA"] ?>">
                   <span class="social-icon"><i class="fab fa-instagram"></i></span>
                 </a>
-                <a title="Linkdin" href="https://github.com/themefisher.com">
-                  <span class="social-icon"><i class="fab fa-github"></i></span>
-                </a>
+               
               </li>
             </ul>
           </div>
@@ -91,7 +91,7 @@
           <div class="logo-area">
             <div class="row align-items-center">
               <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-                <a class="d-block" href="index.html">
+                <a class="d-block" href="index.php">
                   <img loading="lazy" src="assets/img/logo/logoarmantenimientosa.png" alt="Constra">
                 </a>
               </div><!-- logo end -->
@@ -102,7 +102,7 @@
                     <div class="info-box">
                       <div class="info-box-content">
                         <p class="info-box-title">Llamanos</p>
-                        <p class="info-box-subtitle">(+9) 847-291-4353</p>
+                        <p class="info-box-subtitle"><?php echo $INFO["TELF"] ?></p>
                       </div>
                     </div>
                   </li>
@@ -110,7 +110,7 @@
                     <div class="info-box">
                       <div class="info-box-content">
                         <p class="info-box-title">Email</p>
-                        <p class="info-box-subtitle">office@Constra.com</p>
+                        <p class="info-box-subtitle"><?php echo $INFO["EMAIL"] ?></p>
                       </div>
                     </div>
                   </li>
@@ -118,12 +118,12 @@
                     <div class="info-box last">
                       <div class="info-box-content">
                         <p class="info-box-title">Certificado</p>
-                        <p class="info-box-subtitle">ISO 9001:2017</p>
+                        <p class="info-box-subtitle"><?php echo $INFO["CERTIFICADO"] ?></p>
                       </div>
                     </div>
                   </li>
                   <li class="header-get-a-quote">
-                    <a class="btn btn-primary" href="contact.html">Obten un presupuesto</a>
+                    <a class="btn btn-primary" href="<?php echo $INFO["WHATS"] ?>" target="_blank">Obten un presupuesto</a>
                   </li>
                 </ul><!-- Ul end -->
               </div><!-- header right end -->
