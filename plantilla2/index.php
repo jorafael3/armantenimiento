@@ -72,7 +72,7 @@ $CLIENTES = INDEX()[0];
                 </div><!-- Col end -->
                 <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                     <div class="call-to-action-btn">
-                        <a class="btn btn-primary" href="contact.html"><i class="fab fa-whatsapp" style="font-size: 20px;"></i> Comunicate</a>
+                        <a class="btn btn-primary" target="_blank" href="<?php echo $INFO["WHATS"]  ?>"><i class="fab fa-whatsapp" style="font-size: 20px;"></i> Comunicate</a>
                     </div>
                 </div><!-- col end -->
             </div><!-- row end -->
@@ -119,7 +119,7 @@ $CLIENTES = INDEX()[0];
             ?>
             <div class="col-12">
                 <div class="general-btn text-center">
-                    <a class="btn btn-primary" href="projects.html">Ver Todos los servicios</a>
+                    <a class="btn btn-primary" href="servicios.php">Ver Todos los servicios</a>
                 </div>
             </div>
         </div><!-- Content row end -->
@@ -208,8 +208,8 @@ $CLIENTES = INDEX()[0];
         <div class="row">
             <div class="col-12">
                 <div class="shuffle-btn-group">
-                    <label class="active" for="all">
-                        <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">TODOS
+                    <label class="active" for="all"> 
+                        <input  type="radio" name="shuffle-filter" id="all" value="all" checked="checked">TODOS
                     </label>
                     <label for="commercial">
                         <input type="radio" name="shuffle-filter" id="commercial" value="commercial">SOLDADURA
@@ -257,7 +257,7 @@ $CLIENTES = INDEX()[0];
 
             <div class="col-12">
                 <div class="general-btn text-center">
-                    <a class="btn btn-primary" href="projects.html">Ver todos lo proyectos</a>
+                    <a class="btn btn-primary" href="proyectos.php">Ver todos lo proyectos</a>
                 </div>
             </div>
 
@@ -272,7 +272,7 @@ $CLIENTES = INDEX()[0];
             <div class="row">
                 <div class="col-md-3 col-sm-6 ts-facts">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="assets/images/icon-image/fact1.png" alt="facts-img">
+                        <img style="width: 64px;height: 64px;" loading="lazy" src="assets/img/extras/project.png" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
                         <h2 class="ts-facts-num"><span class="counterUp" data-count="100">0</span></h2>
@@ -282,7 +282,7 @@ $CLIENTES = INDEX()[0];
 
                 <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="assets/images/icon-image/fact2.png" alt="facts-img">
+                        <img style="width: 64px;height: 64px;" loading="lazy" src="assets/img/extras/handshake.png" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
                         <h2 class="ts-facts-num"><span class="counterUp" data-count="10">0</span></h2>
@@ -292,7 +292,7 @@ $CLIENTES = INDEX()[0];
 
                 <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="assets/images/icon-image/fact3.png" alt="facts-img">
+                        <img style="width: 64px;height: 64px;" loading="lazy" src="assets/img/extras/customer-service.png" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
                         <h2 class="ts-facts-num"><span class="counterUp" data-count="10">0</span></h2>
@@ -302,7 +302,7 @@ $CLIENTES = INDEX()[0];
 
                 <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="assets/images/icon-image/fact4.png" alt="facts-img">
+                        <img style="width: 64px;height: 64px;" loading="lazy" src="assets/img/extras/certificate.png" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
                         <h2 class="ts-facts-num"><span class="counterUp" data-count="5">0</span></h2>
@@ -331,7 +331,7 @@ $CLIENTES = INDEX()[0];
                     <?php
                     foreach ($CLIENTES as $row) {
                     ?>
-                        <div class="col-sm-4 col-6">
+                        <div class="col-sm-12 col-md-6 col-xl-4">
                             <figure class="clients-logo">
                                 <a href="#!" style="width: 200px;height: 200px;">
                                     <img loading="lazy" class="img-fluid" src="<?php echo $row["IMG"]  ?>" alt="clients-logo" /></a>

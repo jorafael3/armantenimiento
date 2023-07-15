@@ -12,6 +12,7 @@ function proyectos()
             "NOMBRE_DESC" => "Breve descripcion",
             "DURACION" => "6 MESES",
             "CATEGORIA" => "commercial",
+            "CATEGORIA_TEXT" => "SOLDADURA",
             "IMG_BACKGROUND" => "assets/images/projects/project1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=0",
             "DETALLES_PR" => array(
@@ -36,6 +37,7 @@ function proyectos()
             "NOMBRE_DESC" => "Breve descripcion",
             "DURACION" => "6 MESES",
             "CATEGORIA" => "commercial",
+            "CATEGORIA_TEXT" => "SOLDADURA",
             "IMG_BACKGROUND" => "assets/images/projects/project2.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=1",
             "DETALLES_PR" => array(
@@ -62,6 +64,7 @@ function proyectos()
             "NOMBRE_DESC" => "Breve descripcion",
             "DURACION" => "6 MESES",
             "CATEGORIA" => "education",
+            "CATEGORIA_TEXT" => "Construccion",
             "IMG_BACKGROUND" => "assets/images/projects/project3.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=2",
             "DETALLES_PR" => array(
@@ -87,6 +90,7 @@ function proyectos()
             "NOMBRE_DESC" => "Breve descripcion",
             "DURACION" => "6 MESES",
             "CATEGORIA" => "government",
+            "CATEGORIA_TEXT" => "CCTV",
             "IMG_BACKGROUND" => "assets/images/projects/project4.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=3",
             "DETALLES_PR" => array(
@@ -114,17 +118,17 @@ function proyectos()
     return $PROYECTOS_ARRAY;
 }
 
-function Servicios()
+function servicios()
 {
     $pagina_detalle = "servicios_detalles.php";
 
-    $SERVICIOS_ARRAY = [
+    $servicios_ARRAY = [
 
         array(
             "ID" => "0",
             "NOMBRE" => "TRABAJOS ELECTRICOS",
-            "IMG_BACKGROUND" => "assets/img/Servicios/TRABAJOSELECTRICOS/1.jpg",
-            "ICONO" => "assets/img/Servicios/TRABAJOSELECTRICOS/icono.png",
+            "IMG_BACKGROUND" => "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
+            "ICONO" => "assets/img/servicios/TRABAJOSELECTRICOS/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=0",
             "DESCRIPCION" => "Instalaciones de tableros, acometida electrica,
             puntos eléctricos, reordenamiento de cableado,
@@ -139,17 +143,17 @@ function Servicios()
             "DETALLE3" => "DETALLE3",
             "DETALLE3_DESC" => "descripcion del detalle",
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/TRABAJOSELECTRICOS/1.jpg",
-                "assets/img/Servicios/TRABAJOSELECTRICOS/2.jpg",
-                "assets/img/Servicios/TRABAJOSELECTRICOS/3.jpg",
+                "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
+                "assets/img/servicios/TRABAJOSELECTRICOS/2.jpg",
+                "assets/img/servicios/TRABAJOSELECTRICOS/3.jpg",
             ]
 
         ),
         array(
             "ID" => "1",
             "NOMBRE" => "SOLDADURA",
-            "IMG_BACKGROUND" =>  "assets/img/Servicios/TRABAJOSELECTRICOS/1.jpg",
-            "ICONO" => "assets/img/Servicios/SOLDADURA/icono.png",
+            "IMG_BACKGROUND" =>   "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
+            "ICONO" => "assets/img/servicios/SOLDADURA/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=1",
             "DESCRIPCION" => "Soldadura en cobre, aluminio y acero inoxidable,
             fabricación de estructuras metálicas, techados,
@@ -167,16 +171,16 @@ function Servicios()
             "DETALLE3_DESC" => "descripcion del detalle",
 
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/TRABAJOSELECTRICOS/1.jpg",
-                "assets/img/Servicios/TRABAJOSELECTRICOS/2.jpg",
-                "assets/img/Servicios/TRABAJOSELECTRICOS/3.jpg",
+                "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
+                "assets/img/servicios/TRABAJOSELECTRICOS/2.jpg",
+                "assets/img/servicios/TRABAJOSELECTRICOS/3.jpg",
             ]
         ),
         array(
             "ID" => "2",
             "NOMBRE" => "LIMPIEZA",
-            "IMG_BACKGROUND" =>  "assets/img/Servicios/LIMPIEZA/1.jpg",
-            "ICONO" => "assets/img/Servicios/LIMPIEZA/icono.png",
+            "IMG_BACKGROUND" =>  "assets/img/servicios/LIMPIEZA/1.jpg",
+            "ICONO" => "assets/img/servicios/LIMPIEZA/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=2",
             "DESCRIPCION" => "Limpieza en todo tipo de área, esterilización de
             área, se cuenta con hidrolavadora, desengrasante e
@@ -198,17 +202,17 @@ function Servicios()
             "DETALLE3_DESC" => "descripcion del detalle",
 
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/LIMPIEZA/1.jpg",
-                "assets/img/Servicios/LIMPIEZA/2.jpg",
-                "assets/img/Servicios/LIMPIEZA/3.jpg",
-                "assets/img/Servicios/LIMPIEZA/4.jpg",
+                "assets/img/servicios/LIMPIEZA/1.jpg",
+                "assets/img/servicios/LIMPIEZA/2.jpg",
+                "assets/img/servicios/LIMPIEZA/3.jpg",
+                "assets/img/servicios/LIMPIEZA/4.jpg",
             ]
         ),
         array(
             "ID" => "3",
             "NOMBRE" => "PINTURA",
-            "IMG_BACKGROUND" => "assets/img/Servicios/PINTURA/1.jpg",
-            "ICONO" => "assets/img/Servicios/PINTURA/icono.png",
+            "IMG_BACKGROUND" => "assets/img/servicios/PINTURA/1.jpg",
+            "ICONO" => "assets/img/servicios/PINTURA/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=3",
             "DESCRIPCION" => "Aceras, iluminación vial, tráfico y peatonales,
             señalizaciones, trabajo de pintura en toda área y
@@ -226,18 +230,18 @@ function Servicios()
             "DETALLE3_DESC" => "descripcion del detalle",
 
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/PINTURA/1.jpg",
-                "assets/img/Servicios/PINTURA/2.jpg",
-                "assets/img/Servicios/PINTURA/3.jpg",
-                "assets/img/Servicios/PINTURA/4.jpg",
-                "assets/img/Servicios/PINTURA/5.jpg",
+                "assets/img/servicios/PINTURA/1.jpg",
+                "assets/img/servicios/PINTURA/2.jpg",
+                "assets/img/servicios/PINTURA/3.jpg",
+                "assets/img/servicios/PINTURA/4.jpg",
+                "assets/img/servicios/PINTURA/5.jpg",
             ]
         ),
         array(
             "ID" => "4",
             "NOMBRE" => "TUMBADOS",
-            "IMG_BACKGROUND" => "assets/img/Servicios/TUMBADO/1.jpg",
-            "ICONO" => "assets/img/Servicios/TUMBADO/icono.png",
+            "IMG_BACKGROUND" => "assets/img/servicios/TUMBADO/1.jpg",
+            "ICONO" => "assets/img/servicios/TUMBADO/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=4",
             "DESCRIPCION" => "Cielo raso, fibra cemento, gypsum (obras nuevas y
             remodelaciones) etc…",
@@ -251,16 +255,16 @@ function Servicios()
             "DETALLE3_DESC" => "descripcion del detalle",
 
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/TUMBADO/1.jpg",
-                "assets/img/Servicios/TUMBADO/2.jpg",
-                "assets/img/Servicios/TUMBADO/3.jpg",
+                "assets/img/servicios/TUMBADO/1.jpg",
+                "assets/img/servicios/TUMBADO/2.jpg",
+                "assets/img/servicios/TUMBADO/3.jpg",
             ]
         ),
         array(
             "ID" => "5",
             "NOMBRE" => "OBRA CIVIL",
-            "IMG_BACKGROUND" =>  "assets/img/Servicios/OBRACIVIL/1.jpg",
-            "ICONO" => "assets/img/Servicios/OBRACIVIL/icono.png",
+            "IMG_BACKGROUND" =>  "assets/img/servicios/OBRACIVIL/1.jpg",
+            "ICONO" => "assets/img/servicios/OBRACIVIL/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=5",
             "DESCRIPCION" => "Mampostería, aluminio y vidrio, enchapes,
             revestimientos, Señaléticas (Guardavías, reductores
@@ -276,17 +280,17 @@ function Servicios()
             "DETALLE3_DESC" => "descripcion del detalle",
 
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/OBRACIVIL/1.jpg",
-                "assets/img/Servicios/OBRACIVIL/2.jpg",
-                "assets/img/Servicios/OBRACIVIL/3.jpg",
-                "assets/img/Servicios/OBRACIVIL/4.jpg",
+                "assets/img/servicios/OBRACIVIL/1.jpg",
+                "assets/img/servicios/OBRACIVIL/2.jpg",
+                "assets/img/servicios/OBRACIVIL/3.jpg",
+                "assets/img/servicios/OBRACIVIL/4.jpg",
             ]
         ),
         array(
             "ID" => "6",
             "NOMBRE" => "CLIMATIZACION",
-            "IMG_BACKGROUND" =>  "assets/img/Servicios/CLIMATIZACION/1.jpg",
-            "ICONO" => "assets/img/Servicios/CLIMATIZACION/icono.png",
+            "IMG_BACKGROUND" =>  "assets/img/servicios/CLIMATIZACION/1.jpg",
+            "ICONO" => "assets/img/servicios/CLIMATIZACION/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=6",
             "DESCRIPCION" => "Instalación, mantenimiento preventivo,
             predictivo y correctivo, suministro,
@@ -302,16 +306,16 @@ function Servicios()
             "DETALLE3_DESC" => "descripcion del detalle",
 
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/CLIMATIZACION/1.jpg",
-                "assets/img/Servicios/CLIMATIZACION/2.jpg",
-                "assets/img/Servicios/CLIMATIZACION/3.jpg",
+                "assets/img/servicios/CLIMATIZACION/1.jpg",
+                "assets/img/servicios/CLIMATIZACION/2.jpg",
+                "assets/img/servicios/CLIMATIZACION/3.jpg",
             ]
         ),
         array(
             "ID" => "7",
             "NOMBRE" => "SEÑALETICA",
-            "IMG_BACKGROUND" =>  "assets/img/Servicios/SENALETICA/1.jpg",
-            "ICONO" => "assets/img/Servicios/SENALETICA/icono.png",
+            "IMG_BACKGROUND" =>  "assets/img/servicios/SENALETICA/1.jpg",
+            "ICONO" => "assets/img/servicios/SENALETICA/icono.png",
             "LINK_DETALLE" => $pagina_detalle . "?ID=7",
             "DESCRIPCION" => "Instalación de señalética de prohibición,
             obligación, sistema contraincendios, carteleras, etc.",
@@ -324,39 +328,39 @@ function Servicios()
             "DETALLE3" => "DETALLE3",
             "DETALLE3_DESC" => "descripcion del detalle",
             "IMAGENES_PRINCIPALES" => [
-                "assets/img/Servicios/SENALETICA/1.jpg",
-                "assets/img/Servicios/SENALETICA/2.jpg",
-                "assets/img/Servicios/SENALETICA/3.jpg",
+                "assets/img/servicios/SENALETICA/1.jpg",
+                "assets/img/servicios/SENALETICA/2.jpg",
+                "assets/img/servicios/SENALETICA/3.jpg",
             ]
         ),
     ];
 
-    $SERVICIOS_ADICIONALES = [
+    $servicios_ADICIONALES = [
         array(
             "NOMBRE" => "TRABAJOS EN RH",
             "DESCRIPCION" => "Muebles de oficina, anaqueles de cocina,
             armarios, paredes, etc. ",
-            "ICONO" => "assets/img/Servicios/TRABAJOSRH/icono.png",
+            "ICONO" => "assets/img/servicios/TRABAJOSRH/icono.png",
         ),  array(
             "NOMBRE" => "CCTV",
             "DESCRIPCION" => "Mantenimiento, instalaciones (Domo, 360, IP),
             circuito cerrado, sensores, alarmas.",
-            "ICONO" => "assets/img/Servicios/CCTV/icono.png",
+            "ICONO" => "assets/img/servicios/CCTV/icono.png",
         ),  array(
             "NOMBRE" => "ESTIBAS Y LOGISTICA",
             "DESCRIPCION" => " Carga y descarga de cualquier tipo de material",
-            "ICONO" => "assets/img/Servicios/LOGISTICA/icono.png",
+            "ICONO" => "assets/img/servicios/LOGISTICA/icono.png",
         ),  array(
             "NOMBRE" => "GASFITERIA",
             "DESCRIPCION" => " Reubicación, instalaciones nuevas, mantenimiento
             preventivo y correctivo, etc…",
-            "ICONO" => "assets/img/Servicios/GASFITERIA/icono.png",
+            "ICONO" => "assets/img/servicios/GASFITERIA/icono.png",
         ),
         array(
             "NOMBRE" => "ARQUITECTURA",
             "DESCRIPCION" => "Diseños, maqueteria 3D (modelados, renderizado,
             video renders), construcción, remodelación,",
-            "ICONO" => "assets/img/Servicios/ARQUITECTURA/icono.png",
+            "ICONO" => "assets/img/servicios/ARQUITECTURA/icono.png",
         ),
         array(
             "NOMBRE" => "COTIZACION Y PRESUPUESTO",
@@ -365,13 +369,13 @@ function Servicios()
             necesidades del cliente. El presupuesto será
             enviado y canalizado al cliente para su posterior
             aprovación.",
-            "ICONO" => "assets/img/Servicios/COTIZACION/icono.png",
+            "ICONO" => "assets/img/servicios/COTIZACION/icono.png",
         ),
     ];
 
 
 
-    return [$SERVICIOS_ARRAY, $SERVICIOS_ADICIONALES];
+    return [$servicios_ARRAY, $servicios_ADICIONALES];
 }
 
 function RUTAS()
@@ -384,7 +388,7 @@ function RUTAS()
         ),
         array(
             "LINK" => "servicios.php",
-            "NOMBRE" => "SERVICIOS"
+            "NOMBRE" => "servicios"
         ),
         array(
             "LINK" => "proyectos.php",

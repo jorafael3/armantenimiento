@@ -67,7 +67,7 @@ $ARRAY_PROYECTOS = proyectos();
                                         <h3 class="project-item-title">
                                             <a href="<?php echo $row["LINK_DETALLE"] ?>"><?php echo $row["NOMBRE"] ?></a>
                                         </h3>
-                                        <p class="project-cat"><?php echo $row["CATEGORIA"] ?></p>
+                                        <p class="project-cat"><?php echo $row["CATEGORIA_TEXT"] ?></p>
                                     </div>
                                 </div>
                             </div>
