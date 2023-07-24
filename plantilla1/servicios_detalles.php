@@ -16,9 +16,9 @@ if (isset($_GET["ID"])) {
 ?>
 
 <section class="htc__blog__details__page ptb--150 bg__white">
-    <div class="container">
+    <div class="container2" style="padding: 10px;">
         <div class="row">
-            <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+            <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12">
                 <div class="htc__page__sidebar">
                     <!-- Start Single -->
                     <div class="htc__category bg__gray">
@@ -46,7 +46,7 @@ if (isset($_GET["ID"])) {
                     <!-- End Single -->
                 </div>
             </div>
-            <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 smt-40 xmt-40">
+            <div class="col-md-9 col-lg-10 col-sm-12 col-xs-12 smt-40 xmt-40">
                 <div class="htc__single__service">
                     <div class="htc__single__service__tab">
                         <div class="ht-portfolio-pic-show">
@@ -60,7 +60,7 @@ if (isset($_GET["ID"])) {
                                     }
                                 ?>
                                     <div role="tabpanel" class="tab-pane fade in <?php echo $active ?>" id="img-tab-<?php echo $i + 1 ?>">
-                                        <img style="width: 100%;height: 900px;" src="<?php echo $FILTRADO["IMAGENES_PRINCIPALES"][$i]  ?>" alt="full-image">
+                                        <img style="width: 100%;height: 750px;" src="<?php echo $FILTRADO["IMAGENES_PRINCIPALES"][$i]  ?>" alt="full-image">
                                     </div>
                                 <?php
                                 }

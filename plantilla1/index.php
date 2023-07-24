@@ -117,7 +117,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
 <section class="htc__latest__project__area ptb--80 bg__white text__pos">
 
     <div class="container_p">
-        <video width="100%" height="100%" loop controls controlslist="nodownload">
+        <video style="width: 100%; height: 600px;background-color: black;" controls controlslist="nodownload">
             <source src="https://www.torresytorres.com/wp-content/uploads/2022/09/Torres-video-corporativo.mp4" type='video/mp4' ; codecs="hvc1">
             <!-- <source src="https://rotato.netlify.app/alpha-demo/movie-webm.webm" type="video/webm"> -->
 
