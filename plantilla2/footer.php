@@ -1,4 +1,3 @@
-
 <footer id="footer" class="footer bg-overlay">
   <div class="footer-main">
     <div class="container">
@@ -127,5 +126,18 @@
 
 </div><!-- Body inner end -->
 </body>
+<script src="https://sleekflow.io/whatsapp-button.js" async onLoad="whatsappButton({
+		buttonName:'Contactanos',
+		buttonIconSize: '22',
+		brandImageUrl:'https://sleekflow.io/static/images/sleekflow-icon.png',
+		buttonMargin:'true',
+		brandName:'Empresa',
+		brandSubtitleText:'empresa',
+		buttonSize:'regular',
+		callToAction:'Iniciar Chat',
+		phoneNumber:'593969786231',
+		welcomeMessage:'Hola',
+		})">
+</script>
 
 </html>

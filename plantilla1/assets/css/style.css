@@ -220,7 +220,7 @@
 }
 
 .about__inner {
-    background: #1f2d30 none repeat scroll 0 0;
+    background: #23282d none repeat scroll 0 0;
     padding: 60px 26px 22px;
 }
 
@@ -249,7 +249,7 @@ About 2
 }
 
 .about--2 .about__inner h2 {
-    color: #1f2d30;
+    color: #23282d;
 }
 
 .about--2 .about__inner p {
@@ -257,7 +257,7 @@ About 2
 }
 
 .about--2 .about__btn a {
-    color: #1f2d30;
+    color: #23282d;
 }
 
 .about--2 .about__inner.about__hober__info {
@@ -301,7 +301,7 @@ About 2
 ----------------------------------------*/
 
 .section__title h2.title__line {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -315,6 +315,8 @@ About 2
 
 .service__thumb a img {
     width: 100%;
+    border-radius: 15px;
+    filter: brightness(50%);
 }
 
 .service__thumb {
@@ -341,7 +343,7 @@ About 2
     background: #0C6E95 none repeat scroll 0 0;
     content: "";
     height: 100%;
-    opacity: 0.85;
+    opacity: 0.3;
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -368,7 +370,7 @@ About 2
 }
 
 .service__details h2 {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 20px;
     font-weight: 700;
     margin-top: 18px;
@@ -427,7 +429,7 @@ About 2
 }
 
 .offer__details h2 {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -667,7 +669,7 @@ About 2
 }
 
 .team__details {
-    background: #1f2d30 none repeat scroll 0 0;
+    background: #23282d none repeat scroll 0 0;
     border-top: 1px solid #ffffff;
     padding: 23px 0;
     text-align: center;
@@ -901,7 +903,7 @@ About 2
 }
 
 .htc__testimonial__left h2.title__line {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -957,7 +959,7 @@ About 2
 
 .blog__meta {
     align-items: center;
-    background: #1f2d30 none repeat scroll 0 0;
+    background: #23282d none repeat scroll 0 0;
     border: 2px solid #fff;
     border-radius: 25px;
     display: flex;
@@ -973,7 +975,7 @@ About 2
 
 .blog:hover .blog__meta li a,
 .blog:hover .blog__meta li {
-    color: #1f2d30;
+    color: #23282d;
 }
 
 .blog__meta li a {
@@ -1140,7 +1142,7 @@ About 2
 }
 
 .newsletter__wrap h2 {
-    color: #1f2d30;
+    color: #23282d;
     font-weight: 700;
     margin-bottom: 16px;
     text-transform: uppercase;
@@ -1378,7 +1380,7 @@ About 2
 }
 
 .single__mission h2 {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
@@ -1460,7 +1462,7 @@ About 2
 }
 
 .pro__input__box i {
-    background: #1f2d30 none repeat scroll 0 0;
+    background: #23282d none repeat scroll 0 0;
     bottom: 0;
     color: #fff;
     cursor: pointer;
@@ -1702,7 +1704,7 @@ blockquote {
 }
 
 .title__line--3 {
-    color: #1f2d30;
+    color: #23282d;
     display: inline-block;
     font-family: Open Sans;
     font-size: 24px;
@@ -1743,7 +1745,7 @@ blockquote {
 }
 
 .bl__comment__meta h2 {
-    color: #1f2d30;
+    color: #23282d;
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 600;
@@ -1902,7 +1904,7 @@ blockquote {
 }
 
 .title__line--4 {
-    color: #1f2d30;
+    color: #23282d;
     font-weight: 700;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -1939,13 +1941,13 @@ blockquote {
 }
 
 .pro__dtl__list li {
-    color: #1f2d30;
+    color: #23282d;
     font-family: Open Sans;
     font-size: 16px;
 }
 
 .pro__dtl__list.font__bold li {
-    color: #1f2d30;
+    color: #23282d;
     font-family: Raleway;
     font-size: 16px;
     font-weight: 700;
@@ -1957,7 +1959,7 @@ blockquote {
 }
 
 .pro__dtl__inner h2 {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 43px;
@@ -1990,7 +1992,7 @@ blockquote {
 }
 
 .single__project__details h2 {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 17px;
@@ -2033,7 +2035,7 @@ blockquote {
 ----------------------------------------*/
 
 .title__line--5 {
-    color: #1f2d30;
+    color: #23282d;
     display: inline-block;
     font-family: Open Sans;
     font-weight: 700;

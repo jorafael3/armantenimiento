@@ -120,12 +120,12 @@
     text-align: center;
 }
 .copyright__inner p {
-    color: #1f2d30;
+    color: #23282d;
     font-size: 14px;
     font-weight: 600;
 }
 .copyright__inner p a {
-    color: #1f2d30;
+    color: #23282d;
     padding: 0 3px;
     text-transform: capitalize;
     transition: all 0.3s ease 0s;

@@ -4,7 +4,7 @@
 if (isset($_GET["ID"])) {
 
     $ID = $_GET["ID"];
-    $ARRAY_SERVICIOS = Servicios();
+    $ARRAY_SERVICIOS = Servicios()[0];
     $ARRAY = $ARRAY_SERVICIOS[$ID];
     $FILTRADO = $ARRAY_SERVICIOS[$ID]["DETALLES_PR"];
     // var_dump($FILTRADO["IMAGENES_PRINCIPALES"]);
@@ -60,7 +60,7 @@ if (isset($_GET["ID"])) {
                                     }
                                 ?>
                                     <div role="tabpanel" class="tab-pane fade in <?php echo $active ?>" id="img-tab-<?php echo $i + 1 ?>">
-                                        <img src="<?php echo $FILTRADO["IMAGENES_PRINCIPALES"][$i]  ?>" alt="full-image">
+                                        <img style="width: 100%;height: 900px;" src="<?php echo $FILTRADO["IMAGENES_PRINCIPALES"][$i]  ?>" alt="full-image">
                                     </div>
                                 <?php
                                 }
@@ -82,7 +82,7 @@ if (isset($_GET["ID"])) {
                             ?>
                                 <li role="presentation" class="pot-small-img img-tab-<?php echo $i + 1 ?> <?php echo $active ?>">
                                     <a href="#img-tab-<?php echo $i + 1 ?>" role="tab" data-toggle="tab">
-                                        <img src="<?php echo $FILTRADO["IMAGENES_PRINCIPALES"][$i]  ?>" alt="small-image">
+                                        <img style="width: 150px;height: 150px;" src="<?php echo $FILTRADO["IMAGENES_PRINCIPALES"][$i]  ?>" alt="small-image">
                                     </a>
                                 </li>
                             <?php

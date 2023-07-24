@@ -1,9 +1,8 @@
-<div class="htc__contact__address add-res bg__cat--1">
+<!-- <div class="htc__contact__address add-res bg__cat--1">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="htc__contact__wrap clearfix">
-                    <!-- Start Single Address -->
                     <div class="ht__address__inner">
                         <div class="ht__address__icon map-pin">
                             <i class="zmdi zmdi-pin"></i>
@@ -14,8 +13,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- End Single Address -->
-                    <!-- Start Single Address -->
                     <div class="ht__address__inner">
                         <div class="ht__address__icon glob">
                             <i class="fa fa-globe" aria-hidden="true"></i>
@@ -25,8 +22,6 @@
                             <p><a href="#">www.armantenimiento.com</a></p>
                         </div>
                     </div>
-                    <!-- End Single Address -->
-                    <!-- Start Single Address -->
                     <div class="ht__address__inner">
                         <div class="ht__address__icon">
                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -36,18 +31,16 @@
                             <p><a href="#">(593) 0999999999</a></p>
                         </div>
                     </div>
-                    <!-- End Single Address -->
                 </div>
             </div>
         </div>
     </div>
-</div>
-<footer class="htc__footer__area">
+</div> -->
+<!-- <footer class="htc__footer__area">
     <div class="footer__top ptb--50" data--1f2d30__overlay="9.5" style="background: rgba(0, 0, 0, 0) url(assets/images/bg/2.jpg) no-repeat fixed center center / cover ;">
         <div class="container">
             <div class="row">
                 <div class="htc__footer__wrap clearfix">
-                    <!-- Start Single Footer -->
                     <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
                         <div class="footer foo">
                             <div class="footer__widget">
@@ -63,8 +56,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Footer -->
-                    <!-- Start Single Footer -->
                     <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 xmt-40">
                         <div class="footer quick__link foo">
                             <div class="footer__widget">
@@ -73,25 +64,17 @@
                             <div class="footer__link">
                                 <ul class="ft__menu">
                                 <?php
-                                    foreach ($ARRAY_RUTAS as $row) {
-                                    ?>
+                                foreach ($ARRAY_RUTAS as $row) {
+                                ?>
                                         <li><a href="<?php echo $row["LINK"]  ?>"><?php echo $row["NOMBRE"]  ?></a></li>
 
                                     <?php
-                                    }
+                                }
                                     ?>
                                 </ul>
-                                <!-- <ul class="ft__menu">
-                                    <li><a href="#">Quote</a></li>
-                                    <li><a href="projects-one.html">Projects</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="#">Features</a></li>
-                                </ul> -->
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Footer -->
-                    <!-- Start Single Footer -->
                     <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 smt-40 xmt-40">
                         <div class="footer foo">
                             <div class="footer__widget">
@@ -105,26 +88,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- End Single Footer -->
-                    <!-- Start Single Footer -->
-                    <!-- <div class="col-md-3 col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12 smt-40 xmt-40">
-                        <div class="footer foo">
-                            <div class="footer__widget">
-                                <h2 class="ft__title">INQUARY</h2>
-                                <div class="footer__link">
-                                    <ul class="ft__menu">
-                                        <li><a href="index.php">INICIO</a></li>
-                                        <li><a href="service.html">SERVICIOS</a></li>
-                                        <li><a href="#">PROJECTOS</a></li>
-                                        <li><a href="contact.html">CONTACTOS</a></li>
-                                        <li><a href="about.html">QUIENES SOMOS</a></li>
-                                    </ul>
-                                  
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- End Single Footer -->
+                    
                 </div>
             </div>
         </div>
@@ -141,7 +105,123 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
+
+<footer id="footer" class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                    <!-- <h3 class="widget-title">Acerca de Nosotros</h3> -->
+                    <img loading="lazy" width="250px" class="footer-logo" src="assets/img/logo/logoarmantenimientosa.png" alt="Constra">
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor inci done idunt ut labore et dolore magna aliqua.
+                    </p> -->
+                    <!-- <div class="footer-social">
+                        <ul>
+                            <li><a href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#!" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#!" aria-label="Github"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div><!-- Col end -->
+                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                    <h3 class="widget-title">Servicios</h3>
+                    <ul class="list-arrow">
+                        <?php
+                        $con = 0;
+                        foreach ($ARRAY_SERVICIO as $row) {
+
+                        ?>
+
+                            <li><a href="<?php echo $row["LINK_DETALLE"]  ?>"><?php echo $row["NOMBRE"]  ?></a></li>
+
+                        <?php
+                        }
+                        ?>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                    <h3 class="widget-title">Contáctenos</h3>
+                    <div class="working-hours">
+
+                        <i class="fas fa-envelope"></i> correo@armantenimientos.com
+                        <br>
+                        <i class="fas fa-phone"></i> (593) 099999999
+
+                        <!-- Trabajamos los 7 días de la semana, contactenos para mas informacion,
+                        siguenos en nuestraas redes sociales.
+                        <br><br> Lunes - Viernes: <span class="text-right">10:00 - 16:00 </span>
+                        <br> Sabados: <span class="text-right">12:00 - 15:00</span>
+                        <br> Domingos y Feriados: <span class="text-right">09:00 - 12:00</span> -->
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#!" aria-label="Twitter"><i class="fab fa-tiktok"></i></a>
+                                </li>
+                                <li><a href="#!" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                <!-- <li><a href="#!" aria-label="Github"><i class="fab fa-github"></i></a> -->
+                                </li>
+                            </ul>
+                        </div><!-- Footer social end -->
+                    </div>
+                </div><!-- Col end -->
+
+
+            </div><!-- Row end -->
+        </div><!-- Container end -->
+    </div><!-- Footer main end -->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="copyright-info" style="color: white;">
+                        <span>Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>, Ar Mantenimientos
+                        </span>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-6">
+          <div class="footer-menu text-center text-md-right">
+            <ul class="list-unstyled">
+              <?php
+                $con = 0;
+                foreach ($ARRAY_RUTAS as $row) {
+                    $active = "active";
+                    if ($con != 0) {
+                        $active = "";
+                    }
+                ?>
+
+                <li><a href="<?php echo $row["LINK"]  ?>"><?php echo $row["NOMBRE"]  ?></a></li>
+
+              <?php
+                    $con++;
+                }
+                ?>
+
+            </ul>
+          </div>
+        </div> -->
+            </div><!-- Row end -->
+
+            <!-- <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                <button class="btn btn-primary" title="Back to Top">
+                    <i class="fa fa-angle-double-up"></i>
+                </button>
+            </div> -->
+
+        </div><!-- Container end -->
+    </div><!-- Copyright end -->
+</footer><!-- Footer end -->
 <!-- End Footer Area -->
 </div>
 <!-- Body main wrapper end -->
@@ -175,6 +255,6 @@
 		phoneNumber:'593969786231',
 		welcomeMessage:'Hola',
 		})">
-		</script>
+</script>
 
 </html>

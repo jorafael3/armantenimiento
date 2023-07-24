@@ -95,7 +95,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #1f2d30;
+  color: #23282d;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -125,7 +125,7 @@ h6,
 .h5,
 .h6 {
   font-family: 'Raleway', sans-serif;
-  color: #1f2d30;
+  color: #23282d;
   font-weight: 400;
   font-variant-ligatures: common-ligatures;
   margin-top: 0;
@@ -324,9 +324,12 @@ mark {
 .bg__dark {
   background: #151515;
 }
+.bg_dark2 {
+  background: #23282d;
+}
 
 .bg__cat--1 {
-  background-color: #1f2d30;
+  background-color: #23282d;
 }
 
 /* PERSONALIZADO */
@@ -612,7 +615,7 @@ a {
 [data--1f2d30__overlay]:before {
   position: absolute;
   content: '';
-  background: #1f2d30;
+  background: #23282d;
   width: 100%;
   height: 100%;
   top: 0;

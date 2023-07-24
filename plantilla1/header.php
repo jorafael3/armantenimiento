@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logoarmantenimientosa.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 
@@ -38,7 +38,12 @@
     <?php include("datos.php");
 
     $ARRAY_RUTAS = RUTAS();
+    $TOP_BAR = CABECERA_TOP_BAR()[0];
+    // var_dump($TOP_BAR[0]["FACEBOOK"]);
+    $CLIENTES = CLIENTES();
+    $ARRAY_SERVICIO = Servicios()[0];
 
+    include_once("libs_p2.php");
 
     ?>
 
@@ -47,51 +52,80 @@
 </head>
 
 <body>
-
-
     <div class="wrapper">
-        <div id="header" class="htc-header">
+
+        <div id="header" class="htc-header bg__theme">
             <!-- Start Header Top -->
-            <div class="htc__header__top bg__theme">
+            <div id="top-bar" class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <ul class="top-info text-center text-md-left">
+                                <li><i class="fas fa-clock"></i>
+                                    <p class="info-text"><?php echo $TOP_BAR["HORARIO"] ?></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ Top info end -->
+
+                        <div class="col-lg-6 col-md-12 top-social text-center text-md-right">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a title="Facebook" href="<?php echo $TOP_BAR["FACEBOOK"] ?>">
+                                        <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                                    </a>
+                                    <a title="Twitter" href="<?php echo $TOP_BAR["TIKTOK"] ?>">
+                                        <span class="social-icon"><i class="fab fa-tiktok"></i></span>
+                                    </a>
+                                    <a title="Instagram" href="<?php echo $TOP_BAR["INSTAGRAM"] ?>">
+                                        <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ Top social end -->
+                    </div>
+                    <!--/ Content row end -->
+                </div>
+                <!--/ Container end -->
+            </div>
+            <!-- <div class="htc__header__top bg__theme">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                             <ul class="heaher__top__left">
                                 <li class="fw-bold" style="font-size: 14px;font-weight: bold;">
                                     <i class="fa fa-clock-o" style="font-size: 20px;font-weight: bold;"></i>
-                                    7.30 AM - 9.30 PM
+                                    <?php echo $TOP_BAR[0]["HORARIO"] ?>
                                 </li>
-                                <li style="font-size: 14px;font-weight: bold;">
-                                    <a href="#" class="fw-bold">
-                                        <i style="font-size: 20px;font-weight: bold;" class="fa fa-phone"></i>
-                                        (593) 0969786231</a>
-                                </li>
+
                             </ul>
                         </div>
-                        <!-- <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                    <div class="header__top__right">
-                        <ul class="login-register">
-                            <li><a href="login-register.html">LOGIN</a></li>
-                            <li class="separator">/</li>
-                            <li><a href="login-register.html">REGISTER</a></li>
-                        </ul>
-                        <div class="heaher__top__btn">
-                            <a href="#">Buy Now</a>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="header__top__right">
+
+                                <div class="heaher__top__btn">
+                                    <ul class="header__top__right">
+                                        <li><a target="_blank" href="<?php echo $TOP_BAR[0]["FACEBOOK"] ?>"><i style="font-size: 18px;" class="fas fa-chevron-left" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" href="<?php echo $TOP_BAR[0]["TIKTOK"] ?>"><i style="font-size: 18px;" class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                                        <li><a target="_blank" href="<?php echo $TOP_BAR[0]["INSTAGRAM"] ?>"><i style="font-size: 18px;" class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div> -->
-                    </div>
                 </div>
-            </div>
+            </div> -->
             <!-- End Header Top -->
             <!-- Start Mainmenu Area -->
-            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header bg__cat--1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-sm-6 col-xs-7">
-                            <div class="logo">
+                            <div class="log">
                                 <a href="index.php">
-                                    <img style="width: 120px; height: 80px;" src="assets/img/logo/logoarmantenimientosa.png" alt="logo image">
+                                    <img style="width: 160px; height: 120px;" src="assets/img/logo/logoarmantenimientosa.png" alt="logo image">
                                 </a>
                             </div>
                         </div>

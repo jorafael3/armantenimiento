@@ -1,6 +1,7 @@
 <?php include("header.php");
 
-$ARRAY_SERVICIO = Servicios();
+$ARRAY_SERVICIO = Servicios()[0];
+$ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
 
 ?>
 
@@ -45,7 +46,7 @@ $ARRAY_SERVICIO = Servicios();
                         <div class="service foo">
                             <div class="service__thumb">
                                 <a href="<?php echo $row["LINK_DETALLE"]  ?>">
-                                    <img src="<?php echo $row["IMG_BACKGROUND"]  ?>" alt="service images">
+                                    <img style="width: 300px;height: 300px;" src="<?php echo $row["IMG_BACKGROUND"]  ?>" alt="service images">
                                 </a>
                                 <div class="service__hover">
                                     <div class="service__action">
@@ -80,86 +81,56 @@ $ARRAY_SERVICIO = Servicios();
         <div class="row">
             <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
                 <div class="htc__offer__container">
-                    <div class="offer">
-                        <div class="offer__icon">
-                            <img src="assets/images/others/icon-2/1.png" alt="icon images">
-                        </div>
-                        <div class="offer__details">
-                            <h2><a href="#">TRABAJOS EN RH</a></h2>
-                            <p>
-                                Muebles de oficina, anaqueles de cocina,
-                                armarios, paredes, etc. </p>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <div class="offer__icon">
-                            <img src="assets/images/others/icon-2/2.png" alt="icon images">
-                        </div>
-                        <div class="offer__details">
-                            <h2><a href="#">CCTV</a></h2>
-                            <p>
 
-                                Mantenimiento, instalaciones (Domo, 360, IP),
-                                circuito cerrado, sensores, alarmas.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <div class="offer__icon">
-                            <img src="assets/images/others/icon-2/3.png" alt="icon images">
-                        </div>
-                        <div class="offer__details">
-                            <h2><a href="#">ESTIBAS Y LOGISTICA</a></h2>
-                            <p>
-                                Carga y descarga de cualquier tipo de material
-                            </p>
-                        </div>
-                    </div>
+                    <?php
+                    $i = 0;
+                    foreach ($ARRAY_SERVICIO_ADICIONALES as $row) {
+                        if ($i <= 2) {
+                    ?>
+                            <div class="offer">
+                                <div class="offer__icon">
+                                    <img src="<?php echo $row["ICONO"] ?>" alt="icon images">
+                                </div>
+                                <div class="offer__details">
+                                    <h2><a href="#"><?php echo $row["NOMBRE"]  ?></a></h2>
+                                    <p>
+                                        <?php echo $row["DESCRIPCION"] ?></p>
+                                </div>
+                            </div>
+
+                    <?php
+                        }
+                        $i++;
+                    }
+                    ?>
+
 
                 </div>
             </div>
             <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
                 <div class="htc__offer__container">
-                    <div class="offer">
-                        <div class="offer__icon">
-                            <img src="assets/images/others/icon-2/3.png" alt="icon images">
-                        </div>
-                        <div class="offer__details">
-                            <h2><a href="#">GASFITERIA</a></h2>
-                            <p>
-                                Reubicación, instalaciones nuevas, mantenimiento
-                                preventivo y correctivo, etc…
-                            </p>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <div class="offer__icon">
-                            <img src="assets/images/others/icon-2/3.png" alt="icon images">
-                        </div>
-                        <div class="offer__details">
-                            <h2><a href="#">ARQUITECTURA</a></h2>
-                            <p>
-                                Diseños, maqueteria 3D (modelados, renderizado,
-                                video renders), construcción, remodelación,
+                    <?php
+                    $i = 0;
+                    foreach ($ARRAY_SERVICIO_ADICIONALES as $row) {
+                        if ($i > 2) {
+                    ?>
+                            <div class="offer">
+                                <div class="offer__icon">
+                                    <img src="<?php echo $row["ICONO"] ?>" alt="icon images">
+                                </div>
+                                <div class="offer__details">
+                                    <h2><a href="#"><?php echo $row["NOMBRE"]  ?></a></h2>
+                                    <p>
+                                        <?php echo $row["DESCRIPCION"] ?></p>
+                                </div>
+                            </div>
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <div class="offer__icon">
-                            <img src="assets/images/others/icon-2/3.png" alt="icon images">
-                        </div>
-                        <div class="offer__details">
-                            <h2><a href="#">COTIZACION Y PRESUPUESTO</a></h2>
-                            <p>
-                                El servicio que brinda AR MANTENIMIENTOS se
-                                basa bajo previa fiscalización, políticas y
-                                necesidades del cliente. El presupuesto será
-                                enviado y canalizado al cliente para su posterior
-                                aprovación.
-                            </p>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                        $i++;
+                    }
+                    ?>
+
                 </div>
             </div>
         </div>
@@ -170,7 +141,6 @@ $ARRAY_SERVICIO = Servicios();
                 </div>
             </div> -->
 </section>
-
 
 <section class="htc__testimonial__area ptb--130 bg__white">
     <div class="container">
