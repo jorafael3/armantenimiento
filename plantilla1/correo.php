@@ -51,7 +51,7 @@ function Enviar_Correo_Factura()
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'jalvaradoe3@gmail.com';
-        $mail->Password   = 'srieouqqrlkxlkxn';
+        $mail->Password   = '';
         // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
