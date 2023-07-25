@@ -10,7 +10,7 @@ function proyectos()
             "ID" => "0",
             "NOMBRE" => "PROYECTO 1",
             "DURACION" => "6 MESES",
-            "IMG_BACKGROUND" => "assets/images/service/1.jpg",
+            "IMG_BACKGROUND" => "assets/img/proyectos/p1/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=1",
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
@@ -42,7 +42,7 @@ function proyectos()
             "ID" => "1",
             "NOMBRE" => "PROYECTO 2",
             "DURACION" => "6 MESES",
-            "IMG_BACKGROUND" => "assets/images/service/2.jpg",
+            "IMG_BACKGROUND" => "assets/img/proyectos/p2/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=2",
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
@@ -73,8 +73,70 @@ function proyectos()
             "ID" => "2",
             "NOMBRE" => "PROYECTO 3",
             "DURACION" => "6 MESES",
-            "IMG_BACKGROUND" => "assets/images/service/3.jpg",
+            "IMG_BACKGROUND" => "assets/img/proyectos/p3/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=2",
+            "DETALLES_PR" => array(
+                "CLIENTE" => "cliente 1",
+                "LOCALIZACION" => "sector 1",
+                "SECTOR" => "sector 1",
+                "DURACION" => "6 MESES",
+                "DESCRIPCION" => "Aqui va la descripcion del proyecto",
+                "IMAGENES_PRINCIPALES" => [
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+                ],
+                "GALERIA" => [
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+
+                ]
+            ),
+        ),
+        array(
+            "ID" => "3",
+            "NOMBRE" => "PROYECTO 3",
+            "DURACION" => "6 MESES",
+            "IMG_BACKGROUND" => "assets/img/proyectos/p4/1.jpg",
+            "LINK_DETALLE" => $pagina_detalle . "?ID=3",
+            "DETALLES_PR" => array(
+                "CLIENTE" => "cliente 1",
+                "LOCALIZACION" => "sector 1",
+                "SECTOR" => "sector 1",
+                "DURACION" => "6 MESES",
+                "DESCRIPCION" => "Aqui va la descripcion del proyecto",
+                "IMAGENES_PRINCIPALES" => [
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+                ],
+                "GALERIA" => [
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+                    "assets/images/blog/big-images/1.jpg",
+                    "assets/images/blog/big-images/2.jpg",
+                    "assets/images/blog/big-images/3.jpg",
+                    "assets/images/blog/big-images/4.jpg",
+
+                ]
+            ),
+        ),
+        array(
+            "ID" => "4",
+            "NOMBRE" => "PROYECTO 4",
+            "DURACION" => "6 MESES",
+            "IMG_BACKGROUND" => "assets/img/proyectos/p5/1.jpg",
+            "LINK_DETALLE" => $pagina_detalle . "?ID=4",
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
                 "LOCALIZACION" => "sector 1",

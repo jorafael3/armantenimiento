@@ -11,7 +11,7 @@
                 <div class="htc__contact__inner">
                     <h2 class="title__line--5">INFORMACION DE CONTACTOS</h2>
                     <p>
-                            infomraciond e contacto infomraciond e contacto infomraciond e contactoinfomraciond e contacto infomraciond e contactov
+                        infomraciond e contacto infomraciond e contacto infomraciond e contactoinfomraciond e contacto infomraciond e contactov
                     </p>
                 </div>
                 <div class="htc__address__container">
@@ -79,33 +79,33 @@
                 <div class="htc__contact__form__wrap">
                     <h2 class="title__line--5">ENVIANOS UN MENSAJE</h2>
                     <div class="contact-form-wrap">
-                        <form id="contact-form" action="#" method="post">
+                        <div id="" action="#" method="post">
                             <div class="single-contact-inner">
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
                                         <span>Nombre*</span>
-                                        <input type="text" name="name" required>
+                                        <input id="nombre" type="text" name="name" required>
                                     </div>
                                     <div class="contact-box email">
                                         <span>Email*</span>
-                                        <input type="email" name="email" required>
+                                        <input id="email" type="email" name="email" required>
                                     </div>
                                     <div class="contact-box subject">
                                         <span>Asunto*</span>
-                                        <input type="text" name="subject" required>
+                                        <input id="asunto" type="text" name="subject" required>
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box message">
                                         <span>Mensaje*</span>
-                                        <textarea name="message" required></textarea>
+                                        <textarea id="detalle" name="message" required></textarea>
                                     </div>
                                     <div class="contact-btn">
-                                        <button type="submit" class="htc__btn btn--theme">ENVIAR</button>
+                                        <button id="BTN_ENVIAR" type="submit" class="htc__btn btn--theme" name="enviar">ENVIAR</button>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="form-output">
                         <p class="form-messege"></p>
@@ -117,3 +117,47 @@
 </section>
 
 <?php include("footer.php") ?>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $("#BTN_ENVIAR").on("click", function(x) {
+        let nombre = $("#nombre").val();
+        let email = $("#email").val();
+        let asunto = $("#asunto").val();
+        let detalle = $("#detalle").val();
+
+        var parametros = {
+            "enviar": "1",
+            "nombre": nombre,
+            "email": email,
+            "asunto": asunto,
+            "detalle": detalle,
+        };
+        console.log('parametros: ', parametros);
+
+        $.ajax({
+            data: parametros,
+            datatype: 'json',
+            url: 'correo.php',
+            type: 'POST',
+            success: function(x) {
+                x = JSON.parse(x);
+                console.log('x: ', x);
+                if (x[1] == 1) {
+                    Swal.fire(
+                        "Su correo ha sido enviado",
+                        'Gracias',
+                        'success'
+                    )
+                } else {
+                    Swal.fire(
+                        x[0],
+                        '',
+                        'error'
+                    )
+                }
+
+            }
+        });
+    })
+</script>

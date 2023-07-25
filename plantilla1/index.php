@@ -215,86 +215,67 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
         <div class="row">
             <div class="htc__latest__project__wrap h1__project clearfix mt--30">
                 <!-- Start Single Project -->
-                <div class="col-md-5 col-lg-5 hidden-sm col-xs-12">
-                    <div class="project__itm foo">
-                        <div class="project__thumb">
-                            <a href="single-project.html">
-                                <img src="assets/images/lst-project-3/1.jpg" alt="project images">
-                            </a>
-                            <div class="project__hover__info">
-                                <div class="project__action">
-                                    <h2><a href="single-project.html">CONSTRUCTION</a></h2>
-                                    <h4>DURATION : 6 MONTH</h4>
+                <?php
+                $con = 0;
+                foreach ($ARRAY_PROYECTOS as $row) {
+                    if ($con == 0) {
+                ?>
+                        <div class="col-md-5 col-lg-5 hidden-sm col-xs-12">
+                            <div class="project foo">
+                                <div class="project__thumb">
+                                    <a href="<?php echo $row["LINK_DETALLE"]  ?>">
+                                        <img src=" <?php echo $row["IMG_BACKGROUND"]  ?>" alt="project images">
+                                    </a>
+                                    <div class="project__hover__info">
+                                        <div class="project__action">
+                                            <h2><a href="<?php echo $row["LINK_DETALLE"]  ?>"> <?php echo $row["NOMBRE"]  ?></a></h2>
+                                            <h4>DURACION: <?php echo $row["DURACION"]  ?></h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- End Single Project -->
+                <?php
+
+                    }
+                    $con++;
+                }
+                ?>
                 <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="project__itm foo">
-                                <div class="project__thumb">
-                                    <a href="single-project.html">
-                                        <img src="assets/images/lst-project-3/2.jpg" alt="project images">
-                                    </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="single-project.html">CONSTRUCTION</a></h2>
-                                            <h4>DURATION : 6 MONTH</h4>
+                        <?php
+                        $con = 0;
+                        foreach ($ARRAY_PROYECTOS as $row) {
+                            if ($con > 0) {
+                        ?>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="project foo">
+                                        <div class="project__thumb">
+                                            <a href="<?php echo $row["LINK_DETALLE"]  ?>">
+                                                <img src=" <?php echo $row["IMG_BACKGROUND"]  ?>" alt="project images">
+                                            </a>
+                                            <div class="project__hover__info">
+                                                <div class="project__action">
+                                                    <h2><a href="<?php echo $row["LINK_DETALLE"]  ?>"> <?php echo $row["NOMBRE"]  ?></a></h2>
+                                                    <h4>DURACION: <?php echo $row["DURACION"]  ?></h4>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="project__itm foo">
-                                <div class="project__thumb">
-                                    <a href="single-project.html">
-                                        <img src="assets/images/lst-project-3/3.jpg" alt="project images">
-                                    </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="single-project.html">CONSTRUCTION</a></h2>
-                                            <h4>DURATION : 6 MONTH</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="project__itm foo">
-                                <div class="project__thumb">
-                                    <a href="single-project.html">
-                                        <img src="assets/images/lst-project-3/4.jpg" alt="project images">
-                                    </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="single-project.html">CONSTRUCTION</a></h2>
-                                            <h4>DURATION : 6 MONTH</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="project__itm foo">
-                                <div class="project__thumb">
-                                    <a href="single-project.html">
-                                        <img src="assets/images/lst-project-3/5.jpg" alt="project images">
-                                    </a>
-                                    <div class="project__hover__info">
-                                        <div class="project__action">
-                                            <h2><a href="single-project.html">CONSTRUCTION</a></h2>
-                                            <h4>DURATION : 6 MONTH</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+
+                            }
+                            $con++;
+                        }
+                        ?>
+
+
                     </div>
                 </div>
+
+                <!-- End Single Project -->
+
             </div>
         </div>
     </div>
@@ -437,8 +418,8 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
                     $active = "";
                 }
             ?>
-                <div class="col-sm-2 col-md-6 col-lg-3">
-                    <ul class="brand__list">
+                <div class="col-sm-4 col-md-4 col-lg-3">
+                    <ul class="brand__list" >
                         <li>
                             <a style="width: 200px; height: 200px;" href="#!">
                                 <img src="<?php echo $row["IMG"] ?>" alt="brand images"></a>

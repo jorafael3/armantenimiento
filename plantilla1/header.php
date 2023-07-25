@@ -42,6 +42,7 @@
     // var_dump($TOP_BAR[0]["FACEBOOK"]);
     $CLIENTES = CLIENTES();
     $ARRAY_SERVICIO = Servicios()[0];
+    $ARRAY_PROYECTOS= proyectos();
 
     include_once("libs_p2.php");
 
