@@ -15,10 +15,10 @@ if (isset($_GET["ID"])) {
 }
 ?>
 
-<section class="htc__blog__details__page ptb--150 bg__white">
+<section class="htc__blog__details__page ptb--100 bg__white">
     <div class="container2" style="padding: 10px;">
         <div class="row">
-            <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
                 <div class="htc__page__sidebar">
                     <!-- Start Single -->
                     <div class="htc__category bg__gray">
@@ -46,7 +46,7 @@ if (isset($_GET["ID"])) {
                     <!-- End Single -->
                 </div>
             </div>
-            <div class="col-md-9 col-lg-10 col-sm-12 col-xs-12 smt-40 xmt-40">
+            <div class="col-md-9 col-lg-8 col-sm-12 col-xs-12 smt-40 xmt-40">
                 <div class="htc__single__service">
                     <div class="htc__single__service__tab">
                         <div class="ht-portfolio-pic-show">

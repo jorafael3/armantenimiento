@@ -117,47 +117,4 @@
 </section>
 
 <?php include("footer.php") ?>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script>
-    $("#BTN_ENVIAR").on("click", function(x) {
-        let nombre = $("#nombre").val();
-        let email = $("#email").val();
-        let asunto = $("#asunto").val();
-        let detalle = $("#detalle").val();
-
-        var parametros = {
-            "enviar": "1",
-            "nombre": nombre,
-            "email": email,
-            "asunto": asunto,
-            "detalle": detalle,
-        };
-        console.log('parametros: ', parametros);
-
-        $.ajax({
-            data: parametros,
-            datatype: 'json',
-            url: 'correo.php',
-            type: 'POST',
-            success: function(x) {
-                x = JSON.parse(x);
-                console.log('x: ', x);
-                if (x[1] == 1) {
-                    Swal.fire(
-                        "Su correo ha sido enviado",
-                        'Gracias',
-                        'success'
-                    )
-                } else {
-                    Swal.fire(
-                        x[0],
-                        '',
-                        'error'
-                    )
-                }
-
-            }
-        });
-    })
-</script>

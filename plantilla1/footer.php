@@ -111,7 +111,7 @@
     <div class="footer-main">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                <div class="col-lg-4 col-md-4 col-sm-12 footer-widget footer-about">
                     <!-- <h3 class="widget-title">Acerca de Nosotros</h3> -->
                     <img loading="lazy" width="250px" class="footer-logo" src="assets/img/logo/logoarmantenimientosa.png" alt="Constra">
                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -128,7 +128,7 @@
                         </ul>
                     </div> -->
                 </div><!-- Col end -->
-                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-5 mt-lg-0 footer-widget">
                     <h3 class="widget-title">Servicios</h3>
                     <ul class="list-arrow">
                         <?php
@@ -145,7 +145,7 @@
 
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                <div class="col-lg-3 col-md-4 footer-widget mt-5 mt-md-0">
                     <h3 class="widget-title">Contáctenos</h3>
                     <div class="working-hours">
 
@@ -255,6 +255,51 @@
 		phoneNumber:'593969786231',
 		welcomeMessage:'Hola',
 		})">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $("#BTN_ENVIAR").on("click", function(x) {
+        let nombre = $("#nombre").val();
+        let email = $("#email").val();
+        let asunto = $("#asunto").val();
+        let detalle = $("#detalle").val();
+
+        var parametros = {
+            "enviar": "1",
+            "nombre": nombre,
+            "email": email,
+            "asunto": asunto,
+            "detalle": detalle,
+        };
+        console.log('parametros: ', parametros);
+
+        $.ajax({
+            data: parametros,
+            datatype: 'json',
+            url: 'correo.php',
+            type: 'POST',
+            success: function(x) {
+                x = JSON.parse(x);
+                console.log('x: ', x);
+                if (x[1] == 1) {
+                    Swal.fire(
+                        "Su correo ha sido enviado",
+                        'Gracias',
+                        'success'
+                    )
+                } else {
+                    Swal.fire(
+                        x[0],
+                        '',
+                        'error'
+                    )
+                }
+
+            }
+        });
+    })
 </script>
 
 </html>

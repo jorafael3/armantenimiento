@@ -85,7 +85,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
 
                             <div class="service__thumb">
                                 <a href="<?php echo $row["LINK_DETALLE"]  ?>">
-                                    <img class="rounded" style="width: 300px;height: 300px;" src="<?php echo $row["IMG_BACKGROUND"]  ?>" alt="service images">
+                                    <img class="rounded" style="width: 100%;height: 300px;" src="<?php echo $row["IMG_BACKGROUND"]  ?>" alt="service images">
                                 </a>
                                 <div class="service__hovere">
                                     <div class="service__action">
@@ -138,7 +138,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
                 <div class="htc__offer__container">
 
                     <?php
@@ -166,7 +166,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
 
                 </div>
             </div>
-            <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
                 <div class="htc__offer__container">
                     <?php
                     $i = 0;

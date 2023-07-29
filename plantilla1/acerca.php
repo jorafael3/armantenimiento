@@ -172,18 +172,18 @@ $EQUIPO = $ARRAY_ACERCA[1];
                     </div>
                     <div class="clint__comment__form">
                         <div class="single__cl__form">
-                            <input type="text" placeholder="Nombre">
-                            <input type="email" placeholder="EMail">
+                            <input id="nombre" type="text" placeholder="Nombre">
+                            <input id="email" type="email" placeholder="Email">
                         </div>
                         <div class="single__cl__form">
-                            <input type="tel" placeholder="Telefono">
-                            <input type="text" placeholder="Asunto">
+                            <!-- <input type="tel" placeholder="Telefono"> -->
+                            <input id="asunto"  type="text" placeholder="Asunto">
                         </div>
                         <div class="single__cl__message">
-                            <textarea name="message" placeholder="Mensaje"></textarea>
+                            <textarea id="detalle" name="message" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="clint__submit__btn">
-                            <a class="htc__btn" href="#">ENVIAR MENSAJE</a>
+                            <a id="BTN_ENVIAR" class="htc__btn" href="#">ENVIAR MENSAJE</a>
                         </div>
                     </div>
                 </div>

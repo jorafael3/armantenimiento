@@ -24,13 +24,12 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
     </div>
 </div>
 
-
 <section class="htc__service__area service__page bg__gray ptb--100">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="section__title text-center">
-                    <h2 class="title__line">Nuestros <span class="text--theme">SERVICIOS</span></h2>
+                    <h2 class="title__line">NUESTROS <span class="text--theme">SERVICIOS</span></h2>
                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire</p>
                 </div>
             </div>
@@ -42,27 +41,35 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
                 foreach ($ARRAY_SERVICIO as $row) {
                 ?>
 
-                    <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 ">
+
                         <div class="service foo">
+
                             <div class="service__thumb">
                                 <a href="<?php echo $row["LINK_DETALLE"]  ?>">
-                                    <img style="width: 300px;height: 300px;" src="<?php echo $row["IMG_BACKGROUND"]  ?>" alt="service images">
+                                    <img class="rounded" style="width: 100%;height: 300px;" src="<?php echo $row["IMG_BACKGROUND"]  ?>" alt="service images">
                                 </a>
+                                <div class="service__hovere">
+                                    <div class="service__action">
+                                        <a href="<?php echo $row["LINK_DETALLE"]  ?>"><?php echo $row["NOMBRE"]  ?></a>
+                                    </div>
+                                </div>
                                 <div class="service__hover">
                                     <div class="service__action">
-                                        <a href="<?php echo $row["LINK_DETALLE"]  ?>">DETALLES</a>
+                                        <a href="<?php echo $row["LINK_DETALLE"]  ?>"><?php echo $row["NOMBRE"]  ?></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="service__details">
+
+                            <!-- <div class="service__details">
                                 <h2><a href="<?php echo $row["LINK_DETALLE"]  ?>"><?php echo $row["NOMBRE"]  ?></a></h2>
-                            </div>
+                            </div> -->
                         </div>
+
                     </div>
                 <?php
                 }
                 ?>
-
 
             </div>
         </div>
@@ -79,7 +86,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
                 <div class="htc__offer__container">
 
                     <?php
@@ -107,7 +114,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
 
                 </div>
             </div>
-            <div class="col-md-6 col-lg-5 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
                 <div class="htc__offer__container">
                     <?php
                     $i = 0;
@@ -187,19 +194,19 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
                         </p>
                     </div>
                     <div class="clint__comment__form">
-                        <div class="single__cl__form">
-                            <input type="text" placeholder="Nombre">
-                            <input type="email" placeholder="EMail">
+                    <div class="single__cl__form">
+                            <input id="nombre" type="text" placeholder="Nombre">
+                            <input id="email" type="email" placeholder="Email">
                         </div>
                         <div class="single__cl__form">
-                            <input type="tel" placeholder="Telefono">
-                            <input type="text" placeholder="Asunto">
+                            <!-- <input type="tel" placeholder="Telefono"> -->
+                            <input id="asunto"  type="text" placeholder="Asunto">
                         </div>
                         <div class="single__cl__message">
-                            <textarea name="message" placeholder="Mensaje"></textarea>
+                            <textarea id="detalle" name="message" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="clint__submit__btn">
-                            <a class="htc__btn" href="#">ENVIAR MENSAJE</a>
+                            <button id="BTN_ENVIAR" class="htc__btn" href="#">ENVIAR MENSAJE</button>
                         </div>
                     </div>
                 </div>
