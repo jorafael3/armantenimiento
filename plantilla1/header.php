@@ -62,7 +62,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <ul class="top-info text-center text-md-left">
-                                <li><i class="fas fa-clock"></i>
+                                <li>
+                                    <!-- <i class="fas fa-clock"></i> -->
                                     <p class="info-text"><?php echo $TOP_BAR["HORARIO"] ?></p>
                                 </li>
                             </ul>

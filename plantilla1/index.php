@@ -401,7 +401,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
         <div class="row">
             <div class="col-xs-12">
                 <div class="section__title text-center">
-                    <h2 class="title__line">NUESTROS <span class="text--theme">CLIENTES</span></h2>
+                    <h2 class="title__line">CLIENTES QUE NOS DIERON <span class="text--theme">CONFIANZA</span></h2>
                     <p>Ir juntos es comenzar, mantenerse juntos
                         es progresar, trabajar juntos es triunfar</p>
                 </div>
