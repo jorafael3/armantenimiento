@@ -579,7 +579,7 @@ a[href^=tel] {
 ================================================== */
 .top-bar {
   padding: 8px 0;
-  background: #0C6E95;
+  background: #fff;
   position: relative;
   color: #fff;
 }
@@ -611,7 +611,8 @@ ul.top-info li p.info-text {
   line-height: normal;
   display: inline-block;
   flex-direction: column;
-  color: #fff;
+  color: #333;
+  font-weight: bold;
 }
 
 /* Top social */
@@ -620,6 +621,8 @@ ul.top-info li p.info-text {
   padding: 0;
   margin: 0;
   margin-right: -12px;
+  color: #333;
+
 }
 @media (max-width: 767px) {
   .top-social ul {
@@ -631,10 +634,11 @@ ul.top-info li p.info-text {
   padding: 0;
 }
 .top-social ul li a {
-  color: #ffffff;
+  color: #333;
   font-size: 14px;
   transition: 400ms;
   padding: 9px 12px;
+  font-weight: bold;
 }
 .top-social ul li a:hover {
   color: #333;
@@ -647,7 +651,7 @@ ul.top-info li p.info-text {
 }
 
 .top-bar-border ul.top-info {
-  color: #707070;
+  color: #333;
   font-weight: 400;
 }
 
@@ -658,7 +662,6 @@ ul.top-info li p.info-text {
 .top-bar-border ul.top-info li i {
   color: #0C6E95;
 }
-1f2d30
 /* Header area
 ================================================== */
 .header {
