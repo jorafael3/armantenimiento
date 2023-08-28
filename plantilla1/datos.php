@@ -178,12 +178,19 @@ function Servicios()
 
         array(
             "ID" => "0",
-            "NOMBRE" => "TRABAJOS ELECTRICOS",
+            "NOMBRE" => "INFRAESTRUCTURAS ELECTRICAS",
             "IMG_BACKGROUND" =>  "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=0",
-            "DESCRIPCION" => "Instalaciones de tableros, acometida electrica,
-            puntos eléctricos, reordenamiento de cableado,
-            luminarias, reubicaciones",
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Redes eléctricas en bajo y medio voltaje, iluminación, voz/datos, video vigilancia",
+                "Coordinación, protecciones",
+                "Subestaciones y cámaras de transformación",
+                "Generadores y tableros de transferencia",
+                "Sistemas de conexión a tierra",
+                "Analisis calidad de energia",
+                "Diseño e instalación eléctrica",
+            ],
             "DETALLES_PR" => array(
                 "IMAGENES_PRINCIPALES" => [
                     "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
@@ -201,13 +208,17 @@ function Servicios()
         ),
         array(
             "ID" => "1",
-            "NOMBRE" => "SOLDADURA",
+            "NOMBRE" => "INFRAESTRUCTURAS METÁLICAS",
             "IMG_BACKGROUND" => "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=1",
-            "DESCRIPCION" => "Soldadura en cobre, aluminio y acero inoxidable,
-            fabricación de estructuras metálicas, techados,
-            galpones, instalación de cercos y mallas metálicas,
-            etc.",
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Inspección visual dimensionasl en estructuras metálicas, tuberias, recipientes, herramientas, elementos",
+                "Diseño, fabricación, ensamblaje e instalación de estructuras metálicas, tuberias, techados, galpones cercas
+                    , mallas entre otros elementos metálicos",
+                "Reparación y mantenimiento de soldadura en cobre, aluminio y acero inoxidable",
+               
+            ],
             "DETALLES_PR" => array(
                 "IMAGENES_PRINCIPALES" => [
                     "assets/img/servicios/TRABAJOSELECTRICOS/1.jpg",
@@ -224,16 +235,19 @@ function Servicios()
         ),
         array(
             "ID" => "2",
-            "NOMBRE" => "LIMPIEZA",
+            "NOMBRE" => "MANTENIMIENTO Y LIMPIEZA",
             "IMG_BACKGROUND" =>                     "assets/img/servicios/LIMPIEZA/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=2",
-            "DESCRIPCION" => "Limpieza en todo tipo de área, esterilización de
-            área, se cuenta con hidrolavadora, desengrasante e
-            implementos de limpieza (oficinas, interiores,
-            Talleres, Grúas gantry, grúas MHC, grúas Stacker,
-            corte de maleza, terrenos y patios.) etc.…
-            ",
-
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Limpieza de oficinas.",
+                "Limpieza de centro comerciales.",
+                "Limpieza de edificios y hogares.",
+                "Desinfeccioón de espacios.",
+                "Limpieza profunda de superficies.",
+                "Parqueaderos y terrenos limpios.",
+                "Limpieza de pisos de concreto y adoquines.",
+            ],
 
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
@@ -257,14 +271,19 @@ function Servicios()
         ),
         array(
             "ID" => "3",
-            "NOMBRE" => "PINTURA",
+            "NOMBRE" => "SERVICIO DE PINTURA",
             "IMG_BACKGROUND" => "assets/img/servicios/PINTURA/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=3",
-            "DESCRIPCION" => "Aceras, iluminación vial, tráfico y peatonales,
-            señalizaciones, trabajo de pintura en toda área y
-            tipo (anticorrosivo, epóxica, látex, trafico,
-            impermeable, satinado, aqua) etc",
-
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Servicio de pintura interior y exterior.",
+                "Impermiabilización de pisos y paredes.",
+                "Recubrimientos epóxicos y especiales",
+                "Protección intumescentes e ignífuga.",
+                "Sistemas de conexión a tierra",
+                "Servicio de pintura residencial, hospitalaria, edificios, comerciales, inmobiliarios.",
+                "Diseño e instalación eléctrica",
+            ],
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
                 "LOCALIZACION" => "sector 1",
@@ -290,12 +309,15 @@ function Servicios()
         ),
         array(
             "ID" => "4",
-            "NOMBRE" => "TUMBADOS",
+            "NOMBRE" => "SERVICIO DE TUMBADOS",
             "IMG_BACKGROUND" => "assets/img/servicios/TUMBADO/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=4",
-            "DESCRIPCION" => "Cielo raso, fibra cemento, gypsum (obras nuevas y
-            remodelaciones) etc…",
-
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Diseño y elaboración de trabajos en gypsum en remodelación o construcción.",
+                "Diseño e instalación de paredes interiores o divisiones con Rh, gypsum o mamposteria",
+                "Recubrimiento de mamposteria",
+            ],
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
                 "LOCALIZACION" => "sector 1",
@@ -320,10 +342,16 @@ function Servicios()
             "NOMBRE" => "OBRA CIVIL",
             "IMG_BACKGROUND" =>  "assets/img/servicios/OBRACIVIL/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=5",
-            "DESCRIPCION" => "Mampostería, aluminio y vidrio, enchapes,
-            revestimientos, Señaléticas (Guardavías, reductores
-            de velocidad), áreas verdes, adoquinado, etc…",
-
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Diseño y construcción de casas, galpones, edificios, proyectos inmobiliarios, locales, oficinas, departamentos",
+                "Diseño de interiores, decoraciones y diseños de oficinas y mobiliario moderno",
+                "Remodelaciones, nos encargamos de realizar el cambio completo refrescando tus espacios y transformando a tu gusto y necesidad",
+                "Desarrollo de proyectos industriales, comerciales y residencias. Mantenimientos preventivos / correctivos de infraestructuras",
+                "Diseño arquitectónico. Trabajamos contigo en tus proyectos, realizamos maquetas virtuales y renders para
+                    que tus ideas se vualvan reales",
+               
+            ],
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
                 "LOCALIZACION" => "sector 1",
@@ -345,13 +373,21 @@ function Servicios()
         ),
         array(
             "ID" => "6",
-            "NOMBRE" => "CLIMATIZACION",
+            "NOMBRE" => "SISTEMA DE CLIMATIZACION Y AIRES ACONDICIONADOS",
             "IMG_BACKGROUND" => "assets/img/servicios/CLIMATIZACION/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=6",
-            "DESCRIPCION" => "Instalación, mantenimiento preventivo,
-            predictivo y correctivo, suministro,
-            reubicación, etc…",
-
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Venta de equipos de aire acondicionado, equipos de las mejores marcas cumpliendo requerimientos domesticos
+                    , comerciales e industriales, nuestras marcas son garantizadas",
+                "Mantenimiento predictivo, preventivo y correctivo, garantizamos nuestro trabajo de mantenimiento de tus equipos.
+                     Te ayudamos a identificar el problema y le damos solución optima.",
+                "Instalación y reubicacion de A/A.",
+                "Reparación de A/A.",
+                "Climatización industrial.",
+                "Climatización residencial.",
+                "Climatización vehicular  - automotriz.",
+            ],
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
                 "LOCALIZACION" => "sector 1",
@@ -373,12 +409,21 @@ function Servicios()
         ),
         array(
             "ID" => "7",
-            "NOMBRE" => "SEÑALETICA",
+            "NOMBRE" => "SERVICIO DE SEÑALIZACIÓN",
             "IMG_BACKGROUND" =>  "assets/img/servicios/SENALETICA/1.jpg",
             "LINK_DETALLE" => $pagina_detalle . "?ID=7",
-            "DESCRIPCION" => "Instalación de señalética de prohibición,
-            obligación, sistema contraincendios, carteleras, etc.",
-
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+                "Señalización horizontal. Diseño e instalación, se emplea pra regular la circulación, advertir o 
+                guiar a usuarios y la vía.",
+                "Señalización vertical. Diseño e instalación, son todas aquellas que requieren una base",
+                "Productos viales:",
+                "Delineador vial.",
+                "Reductor de velocidad.",
+                "Topes vehiculares.",
+                "Conos de seguridad.",
+                "Tachas reflectivas.",
+            ],
             "DETALLES_PR" => array(
                 "CLIENTE" => "cliente 1",
                 "LOCALIZACION" => "sector 1",
@@ -404,7 +449,9 @@ function Servicios()
         array(
             "NOMBRE" => "TRABAJOS EN RH",
             "DESCRIPCION" => "Muebles de oficina, anaqueles de cocina,
-            armarios, paredes, etc. ",
+            armarios, paredes <br>
+            Catálogo mobiliario <br>
+            Residencial y oficinas",
             "ICONO" => "assets/img/servicios/TRABAJOSRH/icono.png",
         ),  array(
             "NOMBRE" => "CCTV",
@@ -415,17 +462,6 @@ function Servicios()
             "NOMBRE" => "ESTIBAS Y LOGISTICA",
             "DESCRIPCION" => " Carga y descarga de cualquier tipo de material",
             "ICONO" => "assets/img/servicios/LOGISTICA/icono.png",
-        ),  array(
-            "NOMBRE" => "GASFITERIA",
-            "DESCRIPCION" => " Reubicación, instalaciones nuevas, mantenimiento
-            preventivo y correctivo, etc…",
-            "ICONO" => "assets/img/servicios/GASFITERIA/icono.png",
-        ),
-        array(
-            "NOMBRE" => "ARQUITECTURA",
-            "DESCRIPCION" => "Diseños, maqueteria 3D (modelados, renderizado,
-            video renders), construcción, remodelación,",
-            "ICONO" => "assets/img/servicios/ARQUITECTURA/icono.png",
         ),
         array(
             "NOMBRE" => "COTIZACION Y PRESUPUESTO",

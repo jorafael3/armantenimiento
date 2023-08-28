@@ -100,31 +100,32 @@ if (isset($_GET["ID"])) {
                             <?php echo $ARRAY["DESCRIPCION"]  ?>
                         </p>
                     </div>
-                    <!-- <div class="htc__ser__dtl__inner">
-                        <div class="htc__ser__dtl">
-                            <h2 class="title__line--4">PROJECT ANALYSIS</h2>
-                            <p>On the other hand, we denounce with righteous indignion and dislike men who are so beguiled demoralized On the er hand, we denounce with pain and trouble that are und to ensue; and ual blame belongs to those who win</p>
+                    <div class="row">
+                        <div class="col-md-12 " style="margin-top: 15px;">
+
+                           
+                            <ul class="list-arrow">
+                            <?php
+                            foreach($ARRAY["DESCRIPCION_LISTA"] as $row){
+
+                            ?>
+
+                                <li><?php echo $row ?></li>
+                                <?php
+                            }
+                            ?>
+                            </ul>
                         </div>
-                        <div class="htc__ser__dtl">
-                            <h2 class="title__line--4">PROJECT COSTING</h2>
-                            <p>On the other hand, we denounce with righteous indignion and dislike men who are so beguiled demoralized On the er hand, we denounce with pain and trouble that are und to ensue; and ual blame belongs to those who win</p>
-                        </div>
+
+                       
                     </div>
-                    <div class="htc__ser__dtl__inner">
-                        <div class="htc__ser__dtl">
-                            <h2 class="title__line--4">PROJECT PLANNING</h2>
-                            <p>On the other hand, we denounce with righteous indignion and dislike men who are so beguiled demoralized On the er hand, we denounce with pain and trouble that are und to ensue; and ual blame belongs to those who win</p>
-                        </div>
-                        <div class="htc__ser__dtl">
-                            <h2 class="title__line--4">PROJECT STRATEGY</h2>
-                            <p>On the other hand, we denounce with righteous indignion and dislike men who are so beguiled demoralized On the er hand, we denounce with pain and trouble that are und to ensue; and ual blame belongs to those who win</p>
-                        </div>
-                    </div> -->
+                 
                 </div>
             </div>
         </div>
     </div>
     </div>
 </section>
+
 
 <?php include("footer.php") ?>
