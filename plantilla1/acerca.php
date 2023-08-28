@@ -100,7 +100,7 @@ $EQUIPO = $ARRAY_ACERCA[1];
                                     <div class="team__thumb">
                                         <img src="<?php echo $row["EMP1_IMG"]  ?>" alt="team image">
                                     </div>
-                                    <div class="team__hover__info">
+                                    <!-- <div class="team__hover__info">
                                         <ul class="team__social__link">
                                             <li><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
 
@@ -109,7 +109,7 @@ $EQUIPO = $ARRAY_ACERCA[1];
                                             <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
 
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="team__details">
                                     <h2><a href="#"><?php echo $row["EMP1"]  ?></a></h2>
@@ -137,9 +137,9 @@ $EQUIPO = $ARRAY_ACERCA[1];
                     <div class="testimonial__activation clearfix">
                         <!-- Start Single Testimonial -->
                         <div class="testimonial">
-                            <div class="testimonial__thumb">
+                            <!-- <div class="testimonial__thumb">
                                 <img src="assets/images/test/client/1.jpg" alt="clint image">
-                            </div>
+                            </div> -->
                             <div class="testimonial__details">
                                 <div class="tes__icon">
                                     <i class="fa fa-quote-right"></i>

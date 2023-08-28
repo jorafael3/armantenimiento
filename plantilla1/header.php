@@ -137,7 +137,27 @@
                                     <?php
                                     foreach ($ARRAY_RUTAS as $row) {
                                     ?>
-                                        <li><a href="<?php echo $row["LINK"]  ?>"><?php echo $row["NOMBRE"]  ?></a></li>
+                                        <li class="drop"><a href="<?php echo $row["LINK"]  ?>"><?php echo $row["NOMBRE"]  ?></a>
+                                            <?php
+                                            if (isset($row["SUBMENU"])) {
+                                            ?>
+                                                <ul class="dropdown">
+
+                                                    <?php
+                                                    foreach ($ARRAY_SERVICIO as $row) {
+                                                    ?>
+                                                        <li><a href="<?php echo $row["LINK_DETALLE"] ?>"><?php echo $row["NOMBRE"] ?></a></li>
+                                                    <?php
+                                                    }
+                                                    ?>
+                                                </ul>
+
+                                            <?php
+                                            }
+                                            ?>
+
+
+                                        </li>
 
                                     <?php
                                     }
@@ -168,7 +188,7 @@
                 </div> -->
                     </div>
                     <div class="mobile-menu-are mean-container" style="height: 50px;">
-                        <div class="mean-bar" style="border: 1px solid red; margin-top: 50px;" >
+                        <div class="mean-bar" style=" margin-top: 50px;">
                             <!-- <a href="#nav" class="meanmenu-reveal" style="border: 1px solid red;">
                                 <span></span><span></span><span></span>
                             </a> -->

@@ -443,17 +443,50 @@ function Servicios()
                 ]
             ),
         ),
+        array(
+            "ID" => "7",
+            "NOMBRE" => "SERVICIO DE GASFITERIA",
+            "IMG_BACKGROUND" =>  "assets/img/servicios/SENALETICA/1.jpg",
+            "LINK_DETALLE" => $pagina_detalle . "?ID=8",
+            "DESCRIPCION" => "",
+            "DESCRIPCION_LISTA"=> [
+               
+                "Detección de fugas.",
+                "Instalación de tuberias y roscables.",
+                "Instalaciones y remodelaciones.",
+                "Instalación de bombas y tanques.",
+            ],
+            "DETALLES_PR" => array(
+                "CLIENTE" => "cliente 1",
+                "LOCALIZACION" => "sector 1",
+                "SECTOR" => "sector 1",
+                "DURACION" => "6 MESES",
+                "DESCRIPCION" => "Aqui va la descripcion del proyecto",
+                "IMAGENES_PRINCIPALES" => [
+                    "assets/img/servicios/SENALETICA/1.jpg",
+                    "assets/img/servicios/SENALETICA/2.jpg",
+                    "assets/img/servicios/SENALETICA/3.jpg",
+                ],
+                "GALERIA" => [
+                    "assets/img/servicios/SENALETICA/1.jpg",
+                    "assets/img/servicios/SENALETICA/2.jpg",
+                    "assets/img/servicios/SENALETICA/3.jpg",
+
+                ]
+            ),
+        ),
     ];
 
     $servicios_ADICIONALES = [
-        array(
-            "NOMBRE" => "TRABAJOS EN RH",
-            "DESCRIPCION" => "Muebles de oficina, anaqueles de cocina,
-            armarios, paredes <br>
-            Catálogo mobiliario <br>
-            Residencial y oficinas",
-            "ICONO" => "assets/img/servicios/TRABAJOSRH/icono.png",
-        ),  array(
+        // array(
+        //     "NOMBRE" => "TRABAJOS EN RH",
+        //     "DESCRIPCION" => "Muebles de oficina, anaqueles de cocina,
+        //     armarios, paredes <br>
+        //     Catálogo mobiliario <br>
+        //     Residencial y oficinas",
+        //     "ICONO" => "assets/img/servicios/TRABAJOSRH/icono.png",
+        // ), 
+         array(
             "NOMBRE" => "CCTV",
             "DESCRIPCION" => "Mantenimiento, instalaciones (Domo, 360, IP),
             circuito cerrado, sensores, alarmas.",
@@ -487,7 +520,8 @@ function RUTAS()
         ),
         array(
             "LINK" => "servicios.php",
-            "NOMBRE" => "SERVICIOS"
+            "NOMBRE" => "SERVICIOS",
+            "SUBMENU" => 1
         ),
         array(
             "LINK" => "proyectos.php",
