@@ -42,7 +42,7 @@
     // var_dump($TOP_BAR[0]["FACEBOOK"]);
     $CLIENTES = CLIENTES();
     $ARRAY_SERVICIO = Servicios()[0];
-    $ARRAY_PROYECTOS= proyectos();
+    $ARRAY_PROYECTOS = proyectos();
 
     include_once("libs_p2.php");
 
@@ -55,7 +55,7 @@
 <body>
     <div class="wrapper">
 
-        <div id="header" class="htc-header bg__theme">
+        <div id="header" class="htc-header">
             <!-- Start Header Top -->
             <div id="top-bar" class="top-bar">
                 <div class="container">
@@ -121,13 +121,13 @@
             </div> -->
             <!-- End Header Top -->
             <!-- Start Mainmenu Area -->
-            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header bg__cat--1">
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header bg__cat--1" style="height: 130px;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2 col-sm-6 col-xs-7">
-                            <div class="log">
+                        <div class="col-md-2 col-sm-6 col-xs-7" style="margin-left: -50px;">
+                            <div class="logo">
                                 <a href="index.php">
-                                    <img style="width: 160px; height: 120px;" src="assets/img/logo/logoarmantenimientosa.png" alt="logo image">
+                                    <img style="width: 180px; height: 140px;" src="assets/img/logo/logoarmantenimientosa.png" alt="logo image">
                                 </a>
                             </div>
                         </div>
@@ -167,7 +167,27 @@
                     </div>
                 </div> -->
                     </div>
-                    <div class="mobile-menu-area"></div>
+                    <div class="mobile-menu-are mean-container" style="height: 50px;">
+                        <div class="mean-bar" style="border: 1px solid red; margin-top: 50px;" >
+                            <!-- <a href="#nav" class="meanmenu-reveal" style="border: 1px solid red;">
+                                <span></span><span></span><span></span>
+                            </a> -->
+                            <nav class="mean-nav">
+                                <ul style="display: none;">
+                                    <li><a href="index.php">INICIO</a></li>
+
+                                    <li><a href="servicios.php">SERVICIOS</a></li>
+
+                                    <li><a href="proyectos.php">PROYECTOS</a></li>
+
+                                    <li><a href="contactos.php">CONTACTOS</a></li>
+
+                                    <li class="mean-last"><a href="acerca.php">QUIENES SOMOS</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- End Mainmenu Area -->

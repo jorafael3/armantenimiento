@@ -68,7 +68,7 @@ $ARRAY_SERVICIO_ADICIONALES = Servicios()[1];
             <div class="col-xs-12">
                 <div class="section__title text-center">
                     <h2 class="title__line">NUESTROS <span class="text--theme">SERVICIOS</span></h2>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire</p>
+                    <!-- <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire</p> -->
                 </div>
             </div>
         </div>

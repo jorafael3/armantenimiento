@@ -40,7 +40,7 @@
 }
 
 .heaher__top__left li {
-  color: #fff;
+  color: #1f2d30;
   font-size: 12px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .main__menu>li>a {
-  color: #ffffff;
+  color: #fff;
   display: block;
   font-family: Raleway;
   font-size: 14px;
@@ -186,7 +186,7 @@
 
 .sticky__header.scroll-header {
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-  /* background: rgba(164, 15, 15, 0.9) none repeat scroll 0 0; */
+  /* background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0; */
   background: #23282d;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   left: 0;
@@ -199,17 +199,19 @@
 }
 
 .sticky__header.scroll-header .main__menu>li>a {
-  height: 70px;
-  line-height: 70px;
+  height: 120px;
+  line-height: 140px;
 }
 
 .sticky__header.scroll-header .logo {
-  height: 70px;
-  line-height: 70px;
+  height: 140px;
+  line-height: 50px;
 }
 
 .sticky__header.scroll-header .logo a img {
-  max-width: 123px;
+  width: 180px;
+  height: 140px;
+
 }
 
 .sticky__header.scroll-header .htc__header__search {
@@ -276,7 +278,7 @@
 
 .main__menu ul.dropdown li a {
   background: #ffffff none repeat scroll 0 0;
-  color: #23282d;
+  color: #1f2d30;
   display: block;
   font-size: 12px;
   font-weight: 600;
